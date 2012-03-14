@@ -1,0 +1,122 @@
+- content_for :sidebar do
+  %div.callout
+    %p
+      The entire <strong><a href="#">Pro Git book</a></strong> written by Scott Chacon is available to <a href="#">read online for free</a>. Dead tree versions are available on <a href="#">Amazon.com</a>.
+
+%div#main
+  %h1 Reference
+
+  %div.callout.quickref 
+    %p
+      Quick reference guides: 
+      =link_to "DZone RefCard"
+      %small.light (PDF) &nbsp;|&nbsp;
+      =link_to "Visual Git Cheat Sheet"
+      %small.light (SVG | PNG) 
+
+  %div.two-column
+    %div.column-left
+      %h3 Setup and Config
+      %ul.unstyled
+        %li= link_to "config"
+        %li= link_to "help"
+
+      %h3 Getting and Creating Projects
+      %ul.unstyled
+        %li= link_to "init"
+        %li= link_to "clone"
+
+      %h3 Basic Snapshotting
+      %ul.unstyled
+        %li= link_to "add"
+        %li= link_to "status"
+        %li= link_to "diff"
+        %li= link_to "commit"
+        %li= link_to "reset"
+        %li= link_to "rm"
+        %li= link_to "mv"
+
+      %h3 Branching and Merging
+      %ul.unstyled
+        %li= link_to "branch"
+        %li= link_to "checkout"
+        %li= link_to "merge"
+        %li= link_to "mergetool"
+        %li= link_to "log"
+        %li= link_to "stash"
+        %li= link_to "tag"
+
+      %h3 Sharing and Updating Projects
+      %ul.unstyled
+        %li= link_to "fetch"
+        %li= link_to "pull"
+        %li= link_to "push"
+        %li= link_to "remote"
+        %li= link_to "submodule"
+
+      %h3 Inspection and Comparison
+      %ul.unstyled
+        %li= link_to "show"
+        %li= link_to "log"
+        %li= link_to "diff"
+        %li= link_to "shortlog"
+        %li= link_to "describe"
+
+      %h3 Patching
+      %ul.unstyled
+        %li= link_to "am"
+        %li= link_to "apply"
+        %li= link_to "cherry-pick"
+        %li= link_to "rebase"
+
+    %div.column-right
+      %h3 Debugging
+      %ul.unstyled
+        %li= link_to "bisect"
+        %li= link_to "blame"
+
+      %h3 Email
+      %ul.unstyled
+        %li= link_to "am"
+        %li= link_to "apply"
+        %li= link_to "format-patch"
+        %li= link_to "send-email"
+        %li= link_to "request-pull"
+
+      %h3 External Systems
+      %ul.unstyled
+        %li= link_to "svn"
+        %li= link_to "fast-import"
+
+      %h3 Administration
+      %ul.unstyled
+        %li= link_to "gc"
+        %li= link_to "fsck"
+        %li= link_to "reflog"
+        %li= link_to "filter-branch"
+        %li= link_to "instaweb"
+        %li= link_to "archive"
+
+      %h3 Server Admin
+      %ul.unstyled
+        %li= link_to "daemon"
+        %li= link_to "update-server-info"
+
+      %h3 Plumbing Commands
+      %ul.unstyled
+        %li= link_to "cat-file"
+        %li= link_to "commit-tree"
+        %li= link_to "count-objects"
+        %li= link_to "diff-index"
+        %li= link_to "hash-object"
+        %li= link_to "merge-base"
+        %li= link_to "read-tree"
+        %li= link_to "rev-list"
+        %li= link_to "rev-parse"
+        %li= link_to "show-ref"
+        %li= link_to "symbolic-ref"
+        %li= link_to "update-index"
+        %li= link_to "update-ref"
+        %li= link_to "verify-pack"
+        %li= link_to "write-tree"
+

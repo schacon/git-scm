@@ -1,0 +1,20 @@
+hr.sidebar {
+  border: none ! important;
+  height: 12px;
+  width: 218px;
+  background: transparent url(/images/sidebar-divider.png) 0 0 no-repeat;
+  margin-bottom: 2em;
+}
+
+aside .callout {
+  background-color: #ebe9e1;
+  background-color: rgba(223, 221, 213, .33);
+  @include border-radius(3px);
+  padding: 20px;
+  color: lighten($font-color, 20%);
+  p {
+    font-size: 13px ! important;
+    line-height: $base-line-height * 0.7;
+    margin-bottom: 0;
+  }
+}
