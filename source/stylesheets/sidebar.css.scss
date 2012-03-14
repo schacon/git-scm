@@ -6,15 +6,22 @@ hr.sidebar {
   margin-bottom: 2em;
 }
 
-aside .callout {
-  background-color: #ebe9e1;
-  background-color: rgba(223, 221, 213, .33);
-  @include border-radius(3px);
-  padding: 20px;
-  color: lighten($font-color, 20%);
+aside.sidebar {
+  font-size: 13px ! important;
+  line-height: $base-line-height * 0.75;
   p {
     font-size: 13px ! important;
-    line-height: $base-line-height * 0.7;
-    margin-bottom: 0;
+    line-height: $base-line-height * 0.75;
+  }
+
+  .callout {
+    background-color: #ebe9e1;
+    background-color: rgba(223, 221, 213, .33);
+    @include border-radius(3px);
+    padding: 20px;
+    color: lighten($font-color, 20%);
+    p {
+      margin-bottom: 0;
+    }
   }
 }

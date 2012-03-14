@@ -1,26 +1,34 @@
 /*
-Syntax error: Undefined variable: "$base-line-height".
-        on line 11 of /Users/jason/Dropbox/projects/git-scm/www/source/stylesheets/sidebar.css.scss
+Syntax error: Undefined variable: "$font-color".
+        on line 11 of /Users/jason/Dropbox/projects/git-scm/www/source/stylesheets/book.css.scss
 
-6:   margin-bottom: 2em;
-7: }
-8: 
-9: aside.sidebar {
-10:   font-size: 13px ! important;
-11:   line-height: $base-line-height * 0.75;
-12:   p {
-13:     font-size: 13px ! important;
-14:     line-height: $base-line-height * 0.75;
+6:   }
+7:   ol {
+8:     list-style: none; 
+9:   }
+10:   h2 {
+11:     color: $font-color;
+12:   }
+13:   a {
+14:     padding-left: 4px;
 15:   }
-16: 
+16: }
 
 Backtrace:
-/Users/jason/Dropbox/projects/git-scm/www/source/stylesheets/sidebar.css.scss:11
+/Users/jason/Dropbox/projects/git-scm/www/source/stylesheets/book.css.scss:11
 /Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.10/lib/sass/script/variable.rb:50:in `_perform'
 /Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.10/lib/sass/script/node.rb:40:in `perform'
-/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.10/lib/sass/script/operation.rb:74:in `_perform'
-/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.10/lib/sass/script/node.rb:40:in `perform'
 /Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.10/lib/sass/tree/visitors/perform.rb:214:in `visit_prop'
+/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.10/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.10/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.10/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.10/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.10/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.10/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.10/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.10/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.10/lib/sass/tree/visitors/perform.rb:234:in `visit_rule'
 /Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.10/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.10/lib/sass/tree/visitors/perform.rb:18:in `visit'
 /Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.10/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -111,4 +119,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$base-line-height\".\A         on line 11 of /Users/jason/Dropbox/projects/git-scm/www/source/stylesheets/sidebar.css.scss\A \A 6:   margin-bottom: 2em;\A 7: }\A 8: \A 9: aside.sidebar {\A 10:   font-size: 13px ! important;\A 11:   line-height: $base-line-height * 0.75;\A 12:   p {\A 13:     font-size: 13px ! important;\A 14:     line-height: $base-line-height * 0.75;\A 15:   }\A 16: "; }
+  content: "Syntax error: Undefined variable: \"$font-color\".\A         on line 11 of /Users/jason/Dropbox/projects/git-scm/www/source/stylesheets/book.css.scss\A \A 6:   }\A 7:   ol {\A 8:     list-style: none; \A 9:   }\A 10:   h2 {\A 11:     color: $font-color;\A 12:   }\A 13:   a {\A 14:     padding-left: 4px;\A 15:   }\A 16: }"; }
