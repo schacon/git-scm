@@ -9,7 +9,11 @@ var BrowserFallbacks = {
   },
 
   initPlaceholders: function() {
-    if (!Modernizr.placeholder) {
+    if (!Modernizr.input.placeholder) {
+      alert('yo');
+      $('input[placeholder], textarea[placeholder]').each(function(input) {
+        $(this).defaultValue($(this).attr('placeholder'), 'active', 'inactive');
+      });
     }
   }
 
