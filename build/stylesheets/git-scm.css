@@ -56,7 +56,15 @@ p {
 
 a {
   color: #0388a6;
-  text-decoration: none; }
+  text-decoration: none;
+  -moz-transition-property: color;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
   a:hover {
     color: #04b1d8; }
 
@@ -96,7 +104,8 @@ h4, h5, h6 {
   line-height: 22px; }
 
 h4 {
-  font-size: 14px; }
+  font-size: 14px;
+  font-weight: bold; }
   h4 small {
     font-size: 12px; }
 
@@ -424,3 +433,16 @@ ol.book-toc {
     color: #4e443c; }
   ol.book-toc a {
     padding-left: 4px; }
+
+ul.video-thumbnails {
+  list-style: none;
+  margin-top: 1em;
+  margin-left: 0; }
+  ul.video-thumbnails li {
+    margin-bottom: 2em; }
+    ul.video-thumbnails li img {
+      padding: 3px;
+      border: solid 1px #d8d7cf; }
+    ul.video-thumbnails li .description {
+      font-size: 12px;
+      line-height: 15.4px; }

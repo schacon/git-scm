@@ -9,7 +9,11 @@ var BrowserFallbacks = {
   },
 
   initPlaceholders: function() {
-    if (!Modernizr.placeholder) {
+    if (!Modernizr.input.placeholder) {
+      alert('yo');
+      $('input[placeholder], textarea[placeholder]').each(function(input) {
+        $(this).defaultValue($(this).attr('placeholder'), 'active', 'inactive');
+      });
     }
   }
 
@@ -22,10 +26,10 @@ var Search = {
   
   observeFocus: function() {
   	$('form#search input').focus(function() {
-		  $(this).parent('form#search').addClass('focus');
+      $(this).parent('form#search').switchClass("", "focus", 300);
 		});
   	$('form#search input').blur(function() {
-		  $(this).parent('form#search').removeClass('focus');
+      $(this).parent('form#search').switchClass("focus", "", 300);
 		});
   }
 }
