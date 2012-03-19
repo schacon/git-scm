@@ -136,8 +136,9 @@ ol {
 li {
   line-height: 22px; }
 
-ul.unstyled,
-ol.unstyled {
+ul.unstyled, ul.content-list, ul.video-thumbnails, ul.books-list,
+ol.unstyled,
+ol.content-list {
   margin-left: 0;
   list-style: none; }
 
@@ -362,6 +363,23 @@ aside.sidebar {
   .callout.quickref a {
     font-weight: bold; }
 
+.callout.ref-manual {
+  background: #e9e8e0 url(/images/icons/book.png) 24px 20px no-repeat;
+  padding: 20px 30px 20px 100px !important; }
+  .callout.ref-manual h3 {
+    font-size: 18px; }
+  .callout.ref-manual p {
+    font-size: 15px;
+    line-height: 1.3em; }
+
+p.quickref {
+  background: transparent url(/images/icons/document.png) 0 0 no-repeat;
+  padding-left: 22px !important;
+  margin-top: -0.4em;
+  margin-bottom: 1em; }
+  p.quickref a {
+    font-weight: bold; }
+
 \::-webkit-input-placeholder {
   color: #9a9994 !important; }
 
@@ -434,15 +452,39 @@ ol.book-toc {
   ol.book-toc a {
     padding-left: 4px; }
 
-ul.video-thumbnails {
-  list-style: none;
-  margin-top: 1em;
+.content-list, ul.video-thumbnails, ul.books-list {
   margin-left: 0; }
+  .content-list li, ul.video-thumbnails li, ul.books-list li {
+    margin-bottom: 1em; }
+  .content-list .description, ul.video-thumbnails .description, ul.books-list .description {
+    font-size: 12px;
+    line-height: 15.4px; }
+
+ul.video-thumbnails {
+  margin-top: 1em; }
   ul.video-thumbnails li {
     margin-bottom: 2em; }
     ul.video-thumbnails li img {
+      display: block;
+      margin-bottom: 5px;
       padding: 3px;
       border: solid 1px #d8d7cf; }
-    ul.video-thumbnails li .description {
-      font-size: 12px;
-      line-height: 15.4px; }
+
+ul.books-list li {
+  overflow: hidden;
+  *zoom: 1;
+  padding-left: 125px; }
+  ul.books-list li img {
+    width: 109px;
+    margin-left: -125px;
+    margin-right: -125px;
+    float: left;
+    border: solid 1px #b7b7b7; }
+    ul.books-list li img.creative-commons {
+      width: auto;
+      margin-left: 0;
+      margin-right: 0;
+      float: none;
+      border: none;
+      margin-top: 2em;
+      display: block; }

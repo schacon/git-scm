@@ -5,3 +5,25 @@
     font-weight: bold;
   }
 }
+
+.callout.ref-manual {
+  background: $callout-color url(/images/icons/book.png) 24px 20px no-repeat;
+  padding: 20px 30px 20px 100px !important;
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 1.3em;
+  }
+}
+
+p.quickref {
+  background: transparent url(/images/icons/document.png) 0 0 no-repeat;
+  padding-left: 22px ! important;
+  margin-top: -0.4em;
+  margin-bottom: 1em;
+  a {
+    font-weight: bold;
+  }
+}

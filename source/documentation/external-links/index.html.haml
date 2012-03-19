@@ -1,0 +1,129 @@
+- @section = "documentation"
+- @subsection = "external-links"
+
+- content_for :sidebar do
+  %div.callout
+    %p
+      The entire <strong><a href="#">Pro Git book</a></strong> written by Scott Chacon is available to <a href="#">read online for free</a>. Dead tree versions are available on <a href="#">Amazon.com</a>.
+
+%div#main
+  %h1 External Links
+
+  %h2 Tutorials
+
+  %div.two-column
+    %div.column-left
+      %h3 Short &amp; Sweet
+
+      %ul.content-list
+        %li
+          %h4= link_to "Introductory Reference &amp; Tutorial"
+          %p.description
+            The full contents of the <a href="#">Git Reference site</a> is now available here. This introductory walkthrough acts as a nice tutorial.
+
+        %li
+          %h4= link_to "Official Git Tutorial"
+          %p.description
+            The official gittutorial man page is a good place to start.
+
+        %li
+          %h4= link_to "Everyday Git"
+          %p.description
+            Learn the basics with 20 of the most common commands.
+
+        %li
+          %h4= link_to "SVN Crash Course"
+          %p.description
+            A helpful introduction to making the leap from Subversion to Git.
+
+    %div.column-right
+      %h3 Diving Deeper
+
+      %ul.content-list
+        %li
+          %h4= link_to "Git for Designers"
+          %p.description
+            No knowledge of version control? No problem.
+
+        %li
+          %h4= link_to "Git for Computer Scientists"
+          %p.description
+            A quick introduction to Git internals for people who aren't scared by words like Directed Acyclic Graph.
+
+        %li
+          %h4= link_to "Git Magic"
+          %p.description
+            An alternative book with the source <a href="#">online</a>.
+
+        %li
+          %h4= link_to "Help.GitHub"
+          %p.description
+            Guides on a variety of Git and GitHub related topics.
+
+  %h2 Books
+
+  %div.two-column
+    %div.column-left
+      %ul.books-list
+        %li
+          =link_to(image_tag "books/pragmatic-version-control.jpg")
+          %h4= link_to "Pragmatic Version Control Using Git"
+          %p.description
+            By Travis Swicegood
+
+        %li
+          =link_to(image_tag "books/pro-git.jpg")
+          %h4= link_to "Pro Git"
+          %p.description
+            By Scott Chacon
+            =image_tag "creative-commons.png", {:class => 'creative-commons'}
+
+        %li
+          =link_to(image_tag "books/git-internals.jpg")
+          %h4= link_to "Git Internals Peepcode PDF"
+          %p.description
+            By Scott Chacon
+
+    %div.column-right
+      %ul.books-list
+        %li
+          =link_to(image_tag "books/version-control-with-git.jpg")
+          %h4= link_to "Version Control with Git"
+          %p.description
+            By Jon Loeliger 
+
+        %li
+          =link_to(image_tag "books/pragmatic-guide-to-git.jpg")
+          %h4= link_to "Pragmatic Guide to Git"
+          %p.description
+            By Travis Swicegood 
+
+  %h2 Videos
+
+  %div.two-column
+    %div.column-left
+      %ul.video-thumbnails
+        %li
+          =link_to(image_tag('tmp/external-video.jpg'))
+          %h4= link_to "Tech Talk: Linus Torvalds on git"
+          %p.description
+            Linus Torvalds visits Google to share his thoughts on git, the SCM system he created two years earlier.
+        %li
+          =link_to(image_tag('tmp/external-video.jpg'))
+          %h4= link_to "Another Video Title"
+          %p.description
+            The video description here. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+    %div.column-right
+      %ul.video-thumbnails
+        %li
+          =link_to(image_tag('tmp/external-video.jpg'))
+          %h4= link_to "Another Video Title"
+          %p.description
+            The video description here. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+        %li
+          =link_to(image_tag('tmp/external-video.jpg'))
+          %h4= link_to "Another Video Title"
+          %p.description
+            The video description here. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
