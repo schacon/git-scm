@@ -138,6 +138,7 @@ li {
 
 ul.unstyled, ul.content-list, ul.video-thumbnails, ul.books-list,
 ol.unstyled,
+ol#reference-nav,
 ol.content-list {
   margin-left: 0;
   list-style: none; }
@@ -357,6 +358,31 @@ aside.sidebar {
     aside.sidebar .callout p {
       margin-bottom: 0; }
 
+ol#reference-nav {
+  overflow: hidden;
+  *zoom: 1;
+  background-color: #ebe9e1;
+  background-color: rgba(223, 221, 213, 0.33);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  padding: 8px 12px 6px 12px;
+  font-size: 13px;
+  font-weight: bold; }
+  ol#reference-nav li {
+    display: inline; }
+    ol#reference-nav li a, ol#reference-nav li span {
+      float: left;
+      display: block;
+      padding: 3px 6px 3px 7px; }
+    ol#reference-nav li span {
+      color: #9a9994; }
+    ol#reference-nav li.topics {
+      float: right; }
+
 .callout.quickref {
   background: #e9e8e0 url(/images/icons/document.png) 14px 7px no-repeat;
   padding-left: 36px !important; }
@@ -431,14 +457,54 @@ form#search {
     border-color: #009099;
     background-color: #fff; }
 
-p.nutshell {
+.man-page p em {
+  color: #4e443c;
+  font-family: Courier, monospace;
+  font-weight: bold;
+  font-style: normal; }
+.man-page p tt {
+  background-color: #eee0b5;
+  padding: 2px;
+  font-family: Courier, monospace; }
+.man-page p.nutshell {
   background-color: rgba(223, 221, 213, 0.33);
   padding: 1em; }
-
-div.verseblock-content {
+.man-page div.verseblock-content {
   background-color: rgba(223, 221, 213, 0.33);
   padding: 1em;
-  white-space: pre; }
+  margin-bottom: 1em;
+  white-space: pre;
+  color: #4e443c;
+  font-family: Courier, monospace;
+  line-height: 18px; }
+  .man-page div.verseblock-content em {
+    font-weight: bold;
+    font-style: normal; }
+.man-page .listingblock .content {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px 15px 13px 15px;
+  margin-bottom: 1em;
+  background-color: #fff;
+  border: solid 1px #efeee6;
+  color: #f24e32;
+  font-family: Courier, monospace;
+  line-height: 18px; }
+.man-page .admonitionblock table {
+  margin-bottom: 1em; }
+  .man-page .admonitionblock table td {
+    padding: 0 1em; }
+    .man-page .admonitionblock table td .title {
+      font-weight: bold;
+      color: #f24e32; }
+    .man-page .admonitionblock table td:first-child {
+      border-right: solid 2px #d8d7cf; }
+.man-page #footer {
+  color: #9a9994; }
 
 ol.book-toc {
   list-style: none;

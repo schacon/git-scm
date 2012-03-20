@@ -1,24 +1,41 @@
-%p navigation
+- @section = "documentation"
+- @subsection = "reference"
+
+- content_for :sidebar do
+  %div.callout
+    %p
+      The entire <strong><a href="#">Pro Git book</a></strong> written by Scott Chacon is available to <a href="#">read online for free</a>. Dead tree versions are available on <a href="#">Amazon.com</a>.
+
+%ol#reference-nav
+  %li.topics
+    <a href="#">Topics ▾</a>
+  %li= link_to "A"
+  %li= link_to "B"
+  %li= link_to "C"
+  %li= link_to "D"
+  %li= content_tag(:span, "E")
+  %li= link_to "F"
+  %li= link_to "G"
+  %li= link_to "H"
+  %li= link_to "I"
+  %li= content_tag(:span, "J")
+  %li= content_tag(:span, "K")
+  %li= link_to "L"
+  %li= link_to "M"
+  %li= link_to "N"
+  %li= content_tag(:span, "O")
+  %li= link_to "P"
+  %li= link_to "Q"
+  %li= link_to "R"
+  %li= link_to "S"
+  %li= link_to "T"
+  %li= link_to "U"
+  %li= link_to "V"
+  %li= link_to "W"
+  %li= content_tag(:span, "X")
+  %li= content_tag(:span, "Y")
+  %li= content_tag(:span, "Z")
 
 %div#main
-  %h1 git-rebase(1)
-
-  <h2>NAME</h2>
-
-  <div class="sectionbody">
-  <p>git-rebase - Forward-port local commits to the updated upstream head</p>
-  </div>
-
-  <h2 id="_synopsis">SYNOPSIS</h2>
-
-  <div class="sectionbody">
-  <div class="verseblock">
-  <div class="verseblock-content"><em>git rebase</em> [-i | --interactive] [options] [--onto &lt;newbase&gt;]
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&lt;upstream&gt;] [&lt;branch&gt;]
-  <em>git rebase</em> [-i | --interactive] [options] --onto &lt;newbase&gt;
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--root [&lt;branch&gt;]
-  <em>git rebase</em> --continue | --skip | --abort</div>
-  <div class="verseblock-attribution">
-  </div></div>
-  </div>
-
+  %div.man-page
+    = partial 'documentation/reference/rebase-source'

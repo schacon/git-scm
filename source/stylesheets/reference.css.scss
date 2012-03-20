@@ -1,3 +1,28 @@
+ol#reference-nav {
+  @extend .unstyled;
+  @include clearfix;
+  background-color: #ebe9e1;
+  background-color: rgba(223, 221, 213, .33);
+  @include border-radius(3px);
+  padding: 8px 12px 6px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  li {
+    display: inline;
+    a, span {
+      float: left;
+      display: block;
+      padding: 3px 6px 3px 7px;
+    }
+    span {
+      color: $light-font-color;
+    }
+    &.topics {
+      float: right;
+    }
+  }
+}
+
 .callout.quickref {
   background: $callout-color url(/images/icons/document.png) 14px 7px no-repeat;
   padding-left: 36px ! important;
