@@ -6,35 +6,35 @@
     %p
       The entire <strong><a href="#">Pro Git book</a></strong> written by Scott Chacon is available to <a href="#">read online for free</a>. Dead tree versions are available on <a href="#">Amazon.com</a>.
 
-%ol#reference-nav
-  %li.topics
-    <a href="#">Topics ▾</a>
-  %li= link_to "A"
-  %li= link_to "B"
-  %li= link_to "C"
-  %li= link_to "D"
-  %li= content_tag(:span, "E")
-  %li= link_to "F"
-  %li= link_to "G"
-  %li= link_to "H"
-  %li= link_to "I"
-  %li= content_tag(:span, "J")
-  %li= content_tag(:span, "K")
-  %li= link_to "L"
-  %li= link_to "M"
-  %li= link_to "N"
-  %li= content_tag(:span, "O")
-  %li= link_to "P"
-  %li= link_to "Q"
-  %li= link_to "R"
-  %li= link_to "S"
-  %li= link_to "T"
-  %li= link_to "U"
-  %li= link_to "V"
-  %li= link_to "W"
-  %li= content_tag(:span, "X")
-  %li= content_tag(:span, "Y")
-  %li= content_tag(:span, "Z")
+%div#reference-version
+  =link_to "Topics ▾", "#", {:class => 'dropdown-trigger', :id => 'reference-topics-trigger', 'data-panel-id' => 'topics-dropdown'}
+  %div#topics-dropdown.dropdown-panel.right
+    TODO: topics here
+
+  =link_to "Version 1.7.9.2 ▾", "#", {:class => 'dropdown-trigger', :id => 'reference-versions-trigger', 'data-panel-id' => 'previous-versions-dropdown'}
+  <span class="light">git-rebase last updated in 1.7.9.0</span> 
+  %div#previous-versions-dropdown.dropdown-panel.left
+    %ol.reference-previous-versions
+      %li
+        <a href="#"><span class="version">1.7.9.1</span> <span class="changes no">git-rebase unchanged</span></a>
+      %li
+        <a href="#"><span class="version">1.7.9.0</span> <span class="changes yes">git-rebase updated</span></a>
+      %li
+        <a href="#"><span class="version">1.7.8.9</span> <span class="changes no">git-rebase unchanged</span></a>
+      %li
+        <a href="#"><span class="version">1.7.8.8</span> <span class="changes no">git-rebase unchanged</span></a>
+      %li
+        <a href="#"><span class="version">1.7.8.7</span> <span class="changes no">git-rebase unchanged</span></a>
+      %li
+        <a href="#"><span class="version">1.7.8.6</span> <span class="changes yes">git-rebase updated</span></a>
+      %li
+        <a href="#"><span class="version">1.7.8.5</span> <span class="changes no">git-rebase unchanged</span></a>
+      %li
+        <a href="#"><span class="version">1.7.8.4</span> <span class="changes no">git-rebase unchanged</span></a>
+      %li
+        <a href="#"><span class="version">1.7.8.3</span> <span class="changes no">git-rebase unchanged</span></a>
+      %li
+        <a href="#"><span class="version">1.7.8.2</span> <span class="changes no">git-rebase unchanged</span></a>
 
 %div#main
   %div.man-page

@@ -1,24 +1,73 @@
-ol#reference-nav {
+#reference-version {
   @extend .unstyled;
-  @include clearfix;
+  position: relative;
   background-color: #ebe9e1;
   background-color: rgba(223, 221, 213, .33);
   @include border-radius(3px);
   padding: 8px 12px 6px 12px;
+  margin-bottom: 10px; 
   font-size: 13px;
   font-weight: bold;
-  li {
-    display: inline;
-    a, span {
+  .light {
+    font-weight: normal;
+  }
+  a {
+    font-weight: bold;
+    position: relative;
+    top: -5px;   
+    &#reference-versions-trigger {
       float: left;
-      display: block;
-      padding: 3px 6px 3px 7px;
+      margin-right: 6px;
     }
-    span {
-      color: $light-font-color;
-    }
-    &.topics {
+    &#reference-topics-trigger {
       float: right;
+    }
+  }
+  .dropdown-panel {
+    top: 33px;
+  }
+}
+
+#previous-versions-dropdown {
+  padding-top: 6px;
+}
+
+#topics-dropdown {
+  right: 12px;
+  padding: 12px;
+  font-weight: normal;
+}
+
+ol.reference-previous-versions {
+  @extend .unstyled;
+  margin-bottom: 0;
+  li {
+    a {
+      @include clearfix;
+      display: block;
+      padding: 2px 12px;
+      &:hover {
+        background-color: #edf7f8;
+      }
+      span.version {
+        float: left;
+        min-width: 40px;
+      }
+      span.changes {
+        padding-left: 18px;
+        padding-right: 20px;
+        font-size: 11px;  
+        font-weight: normal;
+        color: $font-color;
+        float: left;
+        &.yes {
+          background: transparent url(/images/icons/change-yes.png) 10px 8px no-repeat;
+        }
+        &.no {
+          background: transparent url(/images/icons/change-no.png) 10px 8px no-repeat;
+          color: $light-font-color;
+        }
+      }
     }
   }
 }
