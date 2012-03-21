@@ -445,11 +445,43 @@ aside.sidebar {
 
 #previous-versions-dropdown {
   padding-top: 6px; }
+  #previous-versions-dropdown footer {
+    margin-top: 0;
+    padding: 6px 12px;
+    background-color: #eae9e0;
+    font-weight: normal;
+    font-size: 11px;
+    color: #4e443c; }
 
 #topics-dropdown {
   right: 12px;
   padding: 12px;
-  font-weight: normal; }
+  width: 650px;
+  font-weight: normal;
+  line-height: 1; }
+  #topics-dropdown ul {
+    margin-bottom: 0; }
+  #topics-dropdown li {
+    line-height: 17.6px; }
+  #topics-dropdown h3 {
+    font-size: 13px; }
+  #topics-dropdown a {
+    font-weight: normal;
+    padding: 0; }
+  #topics-dropdown .three-column {
+    overflow: hidden;
+    *zoom: 1; }
+    #topics-dropdown .three-column .column-left {
+      width: 31%;
+      float: left;
+      padding-right: 3%; }
+    #topics-dropdown .three-column .column-middle {
+      width: 31%;
+      float: left;
+      padding-right: 3%; }
+    #topics-dropdown .three-column .column-right {
+      width: 31%;
+      float: left; }
 
 ol.reference-previous-versions {
   margin-bottom: 0; }
@@ -460,12 +492,14 @@ ol.reference-previous-versions {
     padding: 2px 12px; }
     ol.reference-previous-versions li a:hover {
       background-color: #edf7f8; }
+    ol.reference-previous-versions li a.more {
+      font-size: 11px; }
     ol.reference-previous-versions li a span.version {
       float: left;
       min-width: 40px; }
     ol.reference-previous-versions li a span.changes {
       padding-left: 18px;
-      padding-right: 20px;
+      padding-right: 16px;
       font-size: 11px;
       font-weight: normal;
       color: #4e443c;
@@ -475,6 +509,11 @@ ol.reference-previous-versions {
       ol.reference-previous-versions li a span.changes.no {
         background: transparent url(/images/icons/change-no.png) 10px 8px no-repeat;
         color: #9a9994; }
+    ol.reference-previous-versions li a em.date {
+      float: right;
+      font-size: 11px;
+      color: #9a9994;
+      font-weight: normal; }
 
 .callout.quickref {
   background: #e9e8e0 url(/images/icons/document.png) 14px 7px no-repeat;

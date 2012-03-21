@@ -30,12 +30,52 @@
 
 #previous-versions-dropdown {
   padding-top: 6px;
+  footer {
+    margin-top: 0;
+    padding: 6px 12px;
+    background-color: #eae9e0;
+    font-weight: normal;
+    font-size: 11px;
+    color: $font-color;
+  }
 }
 
 #topics-dropdown {
   right: 12px;
   padding: 12px;
+  width: 650px;
   font-weight: normal;
+  line-height: 1;
+  ul {
+    margin-bottom: 0;
+  }
+  li {
+    line-height: $base-line-height * .8;
+  }
+  h3 {
+    font-size: 13px;
+  }
+  a {
+    font-weight: normal;
+    padding: 0;
+  }
+  .three-column {
+    @include clearfix;
+    .column-left {
+      width: 31%;
+      float: left;
+      padding-right: 3%
+    }
+    .column-middle {
+      width: 31%;
+      float: left;
+      padding-right: 3%
+    }
+    .column-right {
+      width: 31%;
+      float: left;
+    }
+  }
 }
 
 ol.reference-previous-versions {
@@ -49,13 +89,16 @@ ol.reference-previous-versions {
       &:hover {
         background-color: #edf7f8;
       }
+      &.more {
+        font-size: 11px;
+      }
       span.version {
         float: left;
         min-width: 40px;
       }
       span.changes {
         padding-left: 18px;
-        padding-right: 20px;
+        padding-right: 16px;
         font-size: 11px;  
         font-weight: normal;
         color: $font-color;
@@ -67,6 +110,12 @@ ol.reference-previous-versions {
           background: transparent url(/images/icons/change-no.png) 10px 8px no-repeat;
           color: $light-font-color;
         }
+      }
+      em.date {
+        float: right;
+        font-size: 11px;
+        color: $light-font-color;
+        font-weight: normal;
       }
     }
   }
