@@ -2,6 +2,7 @@ $(document).ready(function() {
 	BrowserFallbacks.init();
   Search.init();
   Dropdowns.init();
+  Forms.init();
 });
 
 var BrowserFallbacks = {
@@ -37,6 +38,10 @@ var Search = {
 
 var Dropdowns = {
   init: function() {
+    Dropdowns.observeTriggers();
+  },
+
+  observeTriggers: function() {
     $('.dropdown-trigger').click(function(e) {
       e.preventDefault();
       var panelId = $(this).attr('data-panel-id');
@@ -49,5 +54,17 @@ var Dropdowns = {
         $('#'+panelId).show(); 
       }
     });
+  }
+}
+
+var Forms = {
+  init: function() {
+    Forms.observeCopyableInputs();
   },
+
+  observeCopyableInputs: function() {
+    $('input.copyable').click(function() {
+      $(this).select();
+    });
+  }
 }

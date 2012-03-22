@@ -32,11 +32,20 @@
   padding-top: 6px;
   footer {
     margin-top: 0;
-    padding: 6px 12px;
+    padding: 4px 12px;
     background-color: #eae9e0;
     font-weight: normal;
     font-size: 11px;
     color: $font-color;
+    input {
+      font-size: 11px;
+      border: solid 1px #e2e0d8;
+      background-color: #f0efe8; 
+      color: $font-color;
+      width: 70px;
+      @include border-radius(1px);
+      padding: 1px 3px;
+    }
   }
 }
 
