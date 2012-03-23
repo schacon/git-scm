@@ -24,15 +24,23 @@ var BrowserFallbacks = {
 var Search = {
   init: function() {
     Search.observeFocus();
+    Search.observeTextEntry();
   },
   
   observeFocus: function() {
   	$('form#search input').focus(function() {
-      $(this).parent('form#search').switchClass("", "focus", 300);
+      $(this).parent('form#search').switchClass("", "focus", 200);
 		});
   	$('form#search input').blur(function() {
-      $(this).parent('form#search').switchClass("focus", "", 300);
+      $(this).parent('form#search').switchClass("focus", "", 200);
+      $('#search-results').fadeOut(0.2);
 		});
+  },
+
+  observeTextEntry: function() {
+    $('form#search input').keyup(function() {
+      $('#search-results').fadeIn(0.2);
+    });
   }
 }
 
