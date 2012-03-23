@@ -693,19 +693,12 @@ form#search {
           color: #fff;
           text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
           background: #55bec4;
-          /* Old browsers */
-          background: -moz-linear-gradient(top, #55bec4 0%, #54b2b7 100%);
-          /* FF3.6+ */
-          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #54b2b7), color-stop(100%, #009099));
-          /* Chrome,Safari4+ */
-          background: -webkit-linear-gradient(top, #55bec4 0%, #54b2b7 100%);
-          /* Chrome10+,Safari5.1+ */
-          background: -o-linear-gradient(top, #55bec4 0%, #54b2b7 100%);
-          /* Opera 11.10+ */
-          background: -ms-linear-gradient(top, #55bec4 0%, #54b2b7 100%);
-          /* IE10+ */
-          background: linear-gradient(top, #55bec4 0%, #54b2b7 100%);
-          /* W3C */ }
+          background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #55bec4), color-stop(100%, #54b2b7));
+          background-image: -webkit-linear-gradient(#55bec4, #54b2b7);
+          background-image: -moz-linear-gradient(#55bec4, #54b2b7);
+          background-image: -o-linear-gradient(#55bec4, #54b2b7);
+          background-image: -ms-linear-gradient(#55bec4, #54b2b7);
+          background-image: linear-gradient(#55bec4, #54b2b7); }
           #search-results table td.matches a:hover span {
             color: #fff; }
     #search-results table ul {
