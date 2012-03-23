@@ -15,29 +15,47 @@
       try{Typekit.load();}catch(e){}
     
   %body{:id => @page}
-    %div#wrapper
+    %div.inner
       = partial 'shared/header'
 
-      %div#content-wrapper
-        %aside.sidebar
-          %nav
-            %ul
-              %li= link_to "About", "/about"
-              %li
-                =link_to "Documentation", "/documentation", {:class => (@section == 'documentation') ? 'active' : ''}
-                %ul 
-                  %li= link_to "Reference", "/documentation/reference", {:class => (@subsection == 'reference') ? 'active' : ''}
-                  %li= link_to "Book", "/documentation/book", {:class => (@subsection == 'book') ? 'active' : ''}
-                  %li= link_to "Videos", "/documentation/videos", {:class => (@subsection == 'videos') ? 'active' : ''}
-                  %li= link_to "External Links", "/documentation/external-links", {:class => (@subsection == 'external-links') ? 'active' : ''}
-              %li= link_to "Downloads", "/downloads"
-              %li= link_to "Community", "/community"
+    - if @section == 'home'
+      %div#masthead
+        %div.inner
+          %p
+            Git is a <strong>free</strong> & <strong>open source, distributed version control system</strong> designed to handle everything from small to very large projects with speed and efficiency.
 
-          - if content_for(:sidebar)
-            %hr.sidebar
-            = yield_content :sidebar
+          %p
+            Git is <a href="#">easy to learn</a>, has <a href="#">lightening fast performance</a> and a <a href="#">tiny footprint</a>. It outclasses SCM tools like Mercurial, Subversion, CVS, Perforce, and Team Foundation Server with features like <a href="#">cheap local branching</a>, <a href="#">distributed workflows</a>, and convenient <a href="#">staging areas</a>.
 
-        %div#content
+          =image_tag('branching-illustration.png', {:class => 'illustration'})
+
+      %div#conent-wrapper
+        %div.inner 
           =yield
+          = partial 'shared/footer'
 
-      = partial 'shared/footer'
+    - else
+      %div.inner
+        %div#content-wrapper
+          %aside.sidebar
+            %nav
+              %ul
+                %li= link_to "About", "/about"
+                %li
+                  =link_to "Documentation", "/documentation", {:class => (@section == 'documentation') ? 'active' : ''}
+                  %ul 
+                    %li= link_to "Reference", "/documentation/reference", {:class => (@subsection == 'reference') ? 'active' : ''}
+                    %li= link_to "Book", "/documentation/book", {:class => (@subsection == 'book') ? 'active' : ''}
+                    %li= link_to "Videos", "/documentation/videos", {:class => (@subsection == 'videos') ? 'active' : ''}
+                    %li= link_to "External Links", "/documentation/external-links", {:class => (@subsection == 'external-links') ? 'active' : ''}
+                %li= link_to "Downloads", "/downloads"
+                %li= link_to "Community", "/community"
+
+            - if content_for(:sidebar)
+              %hr.sidebar
+              = yield_content :sidebar
+
+          %div#content
+            =yield
+
+        = partial 'shared/footer'

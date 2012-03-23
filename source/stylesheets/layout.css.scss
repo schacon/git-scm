@@ -7,9 +7,12 @@ body {
 }
 
 // High level structure
-#wrapper {
+.inner {
+  @include clearfix;
+  position: relative;
   width: $page-width;
   margin: 0 auto;
+  overflow: visible;
 }
 
 #content-wrapper {
@@ -50,6 +53,27 @@ aside {
     margin-bottom: 1.4em;
     p {
       margin-bottom: 0;
+    }
+  }
+}
+
+#masthead {
+  height: 295px;
+  margin-top: -20px;
+  margin-bottom: 2em;
+  background: #f4f4f1 url(/images/bg/isometric-grid.png) 0 0 repeat-x;
+  .inner {
+    padding-top: 36px;
+    p {
+      width: 558px;
+      font-size: 18px;
+      line-height: $base-line-height * 1.2;
+      margin-bottom: 1.2em;
+    }
+    img.illustration {
+      position: absolute;
+      right: -30px;
+      top: 24px;
     }
   }
 }

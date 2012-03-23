@@ -238,9 +238,13 @@ body {
   color: #4e443c;
   background: #f0efe7 url(/images/bg/body.jpg); }
 
-#wrapper {
+.inner {
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
   width: 940px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: visible; }
 
 #content-wrapper {
   overflow: hidden;
@@ -285,6 +289,23 @@ aside {
     margin-bottom: 1.4em; }
     #main .callout p {
       margin-bottom: 0; }
+
+#masthead {
+  height: 295px;
+  margin-top: -20px;
+  margin-bottom: 2em;
+  background: #f4f4f1 url(/images/bg/isometric-grid.png) 0 0 repeat-x; }
+  #masthead .inner {
+    padding-top: 36px; }
+    #masthead .inner p {
+      width: 558px;
+      font-size: 18px;
+      line-height: 26.4px;
+      margin-bottom: 1.2em; }
+    #masthead .inner img.illustration {
+      position: absolute;
+      right: -30px;
+      top: 24px; }
 
 header {
   margin-top: 14px;
