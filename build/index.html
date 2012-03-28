@@ -23,6 +23,9 @@
     <div class='inner'>
       <header>
         <a href="/"><img src="/images/logo.png" /></a>
+        <span id='tagline'>
+          --wicked-fast-version-control
+        </span>
         <form id='search'>
           <input placeholder="Search entire site..." type="text" />
         </form>
@@ -89,7 +92,48 @@
     </div>
     <div id='conent-wrapper'>
       <div class='inner'>
-        logos and stuff
+        <div id='front-content'>
+          <nav id='front-nav'>
+            <ul>
+              <li id='nav-about'>
+                <a href="/about">
+                <img src="/images/icons/nav-about.png" />
+                <h3>About</h3>
+                <p>A technical overview of how Git works.</p>
+                </a>
+              </li>
+              <li id='nav-documentation'>
+                <a href="/documentation">
+                <img src="/images/icons/nav-documentation.png" />
+                <h3>Documentation</h3>
+                <p>Man pages, Pro Git book content, and other reference material.</p>
+                </a>
+              </li>
+              <li id='nav-downloads'>
+                <a href="/downloads">
+                <img src="/images/icons/nav-downloads.png" />
+                <h3>Downloads</h3>
+                <p>GUI clients and binary releases for all major platforms.</p>
+                </a>
+              </li>
+              <li id='nav-community'>
+                <a href="/community">
+                <img src="/images/icons/nav-community.png" />
+                <h3>Community</h3>
+                <p>Blogs, forums, mailing lists, and more.</p> </a>
+              </li>
+            </ul>
+          </nav>
+          <section id='front-downloads'>
+            <div class='monitor mac'>
+              <h4>Latest stable release</h4>
+              <span class='version'>1.7.9.5</span>
+              <a href="javascript:void(0);">Release Notes</a>
+              <span class='release-date'>(3-26-2012)</span>
+              <a class="button" href="#">Download for Mac</a>
+            </div>
+          </section>
+        </div>
         <footer>
           <div class='site-source'>
             The <a href="#">source for this page</a> (and this <a href="#">entire site</a>) is hosted on GitHub.<br>

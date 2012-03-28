@@ -1,4 +1,39 @@
 - @section = "home"
 - @subsection = ""
 
-logos and stuff
+%div#front-content
+  %nav#front-nav
+    %ul
+      %li#nav-about
+        <a href="/about">
+        <img src="/images/icons/nav-about.png" />
+        <h3>About</h3>
+        <p>A technical overview of how Git works.</p>
+        </a>
+      %li#nav-documentation
+        <a href="/documentation">
+        <img src="/images/icons/nav-documentation.png" />
+        <h3>Documentation</h3>
+        <p>Man pages, Pro Git book content, and other reference material.</p>
+        </a>  
+      %li#nav-downloads
+        <a href="/downloads">
+        <img src="/images/icons/nav-downloads.png" />
+        <h3>Downloads</h3>
+        <p>GUI clients and binary releases for all major platforms.</p>
+        </a>
+      %li#nav-community
+        <a href="/community">
+        <img src="/images/icons/nav-community.png" />
+        <h3>Community</h3>
+        <p>Blogs, forums, mailing lists, and more.</p> </a>
+
+  %section#front-downloads
+    %div.monitor.mac
+      %h4 Latest stable release
+      %span.version 1.7.9.5
+
+      =link_to "Release Notes"
+      %span.release-date (3-26-2012)
+
+      =link_to "Download for Mac", "#", {:class => 'button'}

@@ -88,7 +88,7 @@ h1 {
 h2 {
   font-size: 18px;
   line-height: 44px;
-  color: #f24e32;
+  color: #f14e32;
   font-weight: bold; }
   h2 small {
     font-size: 18px; }
@@ -136,7 +136,7 @@ ol {
 li {
   line-height: 22px; }
 
-ul.unstyled, ul#reference-version, #search-results table ul, ul.content-list, ul.video-thumbnails, ul.books-list,
+ul.unstyled, #front-nav ul, ul#reference-version, #search-results table ul, ul.content-list, ul.video-thumbnails, ul.books-list,
 ol.unstyled,
 ol#reference-version,
 ol.reference-previous-versions,
@@ -310,7 +310,15 @@ aside {
 header {
   margin-top: 14px;
   position: relative;
-  padding-bottom: 30px; }
+  padding-bottom: 26px; }
+  header #tagline {
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 120px;
+    color: #9a9994;
+    font-size: 24px;
+    line-height: 24px; }
 
 aside nav ul {
   list-style: none;
@@ -324,7 +332,7 @@ aside nav ul {
       display: block;
       color: #413932; }
       aside nav ul li a.active, aside nav ul li a:hover {
-        color: #f24e32; }
+        color: #f14e32; }
     aside nav ul li ul {
       margin-top: 0.3em;
       margin-left: 20px;
@@ -389,6 +397,7 @@ a.dropdown-trigger {
     border-top-right-radius: 0; }
 
 footer {
+  clear: both;
   overflow: hidden;
   *zoom: 1;
   margin-top: 35px;
@@ -408,6 +417,136 @@ footer {
   footer .sfc-member {
     float: right;
     text-align: right; }
+
+#front-content {
+  overflow: hidden;
+  *zoom: 1;
+  overflow: visible; }
+
+#front-nav {
+  overflow: hidden;
+  *zoom: 1;
+  width: 618px;
+  float: left;
+  border-right: solid 1px #d8d7cf; }
+  #front-nav ul {
+    padding-top: 30px; }
+    #front-nav ul li {
+      display: block;
+      width: 280px;
+      float: left;
+      margin-bottom: 20px; }
+      #front-nav ul li#nav-about, #front-nav ul li#nav-downloads {
+        margin-right: 30px; }
+      #front-nav ul li#nav-about, #front-nav ul li#nav-documentation {
+        margin-bottom: 40px; }
+  #front-nav a {
+    height: 86px;
+    display: block;
+    color: #4e443c;
+    padding-left: 90px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    -moz-transition-property: color;
+    -webkit-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+    -moz-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+    #front-nav a img {
+      margin-left: -90px;
+      margin-right: -90px;
+      float: left;
+      opacity: 0.9;
+      -moz-transition-property: opacity;
+      -webkit-transition-property: opacity;
+      -o-transition-property: opacity;
+      transition-property: opacity;
+      -moz-transition-duration: 0.3s;
+      -webkit-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+    #front-nav a h3 {
+      font-size: 18px;
+      font-weight: bold;
+      color: #f14e32; }
+    #front-nav a p {
+      font-size: 13px;
+      line-height: 17.6px; }
+  #front-nav a:hover img {
+    opacity: 1; }
+  #front-nav a:hover h3 {
+    color: #ef391a; }
+
+#front-downloads {
+  width: 313px;
+  float: right;
+  position: relative; }
+  #front-downloads .monitor {
+    position: absolute;
+    top: 0;
+    right: -12px;
+    width: 313px;
+    height: 271px;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2); }
+    #front-downloads .monitor h4 {
+      font-weight: normal;
+      color: #fff;
+      font-size: 16px; }
+    #front-downloads .monitor span.version {
+      display: block;
+      font-weight: bold;
+      font-size: 28px;
+      margin-bottom: 10px; }
+    #front-downloads .monitor a {
+      color: #59d6de;
+      font-size: 12px; }
+    #front-downloads .monitor span.release-date {
+      font-size: 12px; }
+    #front-downloads .monitor a.button {
+      display: block;
+      margin-top: 12px;
+      border-top: solid 1px #085e64;
+      border-left: solid 1px #1f6367;
+      border-right: solid 1px #1f6367;
+      border-bottom: solid 1px #185154;
+      text-align: center;
+      color: #fff;
+      font-size: 16px;
+      width: 224px;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      -o-border-radius: 2px;
+      -ms-border-radius: 2px;
+      -khtml-border-radius: 2px;
+      border-radius: 2px;
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1c868c), color-stop(100%, #186368));
+      background-image: -webkit-linear-gradient(#1c868c, #186368);
+      background-image: -moz-linear-gradient(#1c868c, #186368);
+      background-image: -o-linear-gradient(#1c868c, #186368);
+      background-image: -ms-linear-gradient(#1c868c, #186368);
+      background-image: linear-gradient(#1c868c, #186368);
+      -moz-box-shadow: 0 1px 0 #127a81;
+      -webkit-box-shadow: 0 1px 0 #127a81;
+      -o-box-shadow: 0 1px 0 #127a81;
+      box-shadow: 0 1px 0 #127a81;
+      padding: 5px 0; }
+      #front-downloads .monitor a.button:hover {
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1a7e84), color-stop(100%, #165b60));
+        background-image: -webkit-linear-gradient(#1a7e84, #165b60);
+        background-image: -moz-linear-gradient(#1a7e84, #165b60);
+        background-image: -o-linear-gradient(#1a7e84, #165b60);
+        background-image: -ms-linear-gradient(#1a7e84, #165b60);
+        background-image: linear-gradient(#1a7e84, #165b60); }
+    #front-downloads .monitor.mac {
+      background: transparent url(/images/monitor-mac.png) top right no-repeat;
+      padding-top: 30px;
+      padding-left: 40px;
+      width: 273px;
+      height: 241px; }
 
 hr.sidebar {
   border: none !important;
@@ -631,7 +770,7 @@ form#search {
   top: 2px;
   right: -8px;
   width: 384px;
-  background: transparent url(/images/bg/search-header.jpg) 0 1px repeat-x;
+  background: #398a94 url(/images/bg/search-header.jpg) 0 1px repeat-x;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   -o-border-radius: 3px;
@@ -761,7 +900,7 @@ form#search {
   margin-bottom: 1em;
   background-color: #fff;
   border: solid 1px #efeee6;
-  color: #f24e32;
+  color: #f14e32;
   font-family: Courier, monospace;
   line-height: 18px; }
 .man-page .admonitionblock table {
@@ -770,7 +909,7 @@ form#search {
     padding: 0 1em; }
     .man-page .admonitionblock table td .title {
       font-weight: bold;
-      color: #f24e32; }
+      color: #f14e32; }
     .man-page .admonitionblock table td:first-child {
       border-right: solid 2px #d8d7cf; }
 .man-page #footer {
