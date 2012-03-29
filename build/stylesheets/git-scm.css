@@ -422,15 +422,17 @@ footer {
   overflow: hidden;
   *zoom: 1;
   overflow: visible; }
+  #front-content #front-navigation {
+    width: 618px;
+    float: left;
+    border-right: solid 1px #d8d7cf;
+    margin-bottom: 24px; }
 
 #front-nav {
   overflow: hidden;
-  *zoom: 1;
-  width: 618px;
-  float: left;
-  border-right: solid 1px #d8d7cf; }
+  *zoom: 1; }
   #front-nav ul {
-    padding-top: 30px; }
+    padding-top: 24px; }
     #front-nav ul li {
       display: block;
       width: 280px;
@@ -480,6 +482,17 @@ footer {
   #front-nav a:hover h3 {
     color: #ef391a; }
 
+#front-book {
+  padding-top: 20px;
+  float: left;
+  width: 590px;
+  border-top: solid 1px #d8d7cf; }
+  #front-book img {
+    float: left;
+    margin-right: 20px; }
+  #front-book p {
+    margin-top: 16px; }
+
 #front-downloads {
   width: 313px;
   float: right;
@@ -500,7 +513,7 @@ footer {
       display: block;
       font-weight: bold;
       font-size: 28px;
-      margin-bottom: 10px; }
+      margin-bottom: 6px; }
     #front-downloads .monitor a {
       color: #59d6de;
       font-size: 12px; }
@@ -508,7 +521,7 @@ footer {
       font-size: 12px; }
     #front-downloads .monitor a.button {
       display: block;
-      margin-top: 12px;
+      margin-top: 10px;
       border-top: solid 1px #085e64;
       border-left: solid 1px #1f6367;
       border-right: solid 1px #1f6367;
@@ -517,6 +530,7 @@ footer {
       color: #fff;
       font-size: 16px;
       width: 224px;
+      padding: 5px 0;
       -moz-border-radius: 2px;
       -webkit-border-radius: 2px;
       -o-border-radius: 2px;
@@ -533,7 +547,14 @@ footer {
       -webkit-box-shadow: 0 1px 0 #127a81;
       -o-box-shadow: 0 1px 0 #127a81;
       box-shadow: 0 1px 0 #127a81;
-      padding: 5px 0; }
+      -moz-transition-property: background-image;
+      -webkit-transition-property: background-image;
+      -o-transition-property: background-image;
+      transition-property: background-image;
+      -moz-transition-duration: 0.3s;
+      -webkit-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
       #front-downloads .monitor a.button:hover {
         background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1a7e84), color-stop(100%, #165b60));
         background-image: -webkit-linear-gradient(#1a7e84, #165b60);
@@ -543,10 +564,50 @@ footer {
         background-image: linear-gradient(#1a7e84, #165b60); }
     #front-downloads .monitor.mac {
       background: transparent url(/images/monitor-mac.png) top right no-repeat;
-      padding-top: 30px;
+      padding-top: 36px;
       padding-left: 40px;
-      width: 273px;
-      height: 241px; }
+      height: 235px;
+      width: 273px; }
+    #front-downloads .monitor.windows {
+      background: transparent url(/images/monitor-windows.png) top right no-repeat;
+      padding-top: 45px;
+      padding-left: 40px;
+      height: 226px;
+      width: 273px; }
+    #front-downloads .monitor.linux {
+      background: transparent url(/images/monitor-linux.png) top right no-repeat;
+      padding-top: 45px;
+      padding-left: 40px;
+      height: 226px;
+      width: 273px; }
+  #front-downloads table {
+    position: absolute;
+    top: 271px;
+    left: 24px; }
+    #front-downloads table td {
+      padding: 8px 20px 6px 0; }
+    #front-downloads table a {
+      font-weight: bold; }
+
+a.icon {
+  padding-left: 30px;
+  height: 30px;
+  line-height: 36px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto; }
+  a.icon {
+    *display: inline; }
+  a.icon.gui {
+    background: transparent url(/images/icons/gui.png) 6px 0 no-repeat; }
+  a.icon.older-releases {
+    background: transparent url(/images/icons/box.png) 0 4px no-repeat; }
+  a.icon.windows {
+    background: transparent url(/images/icons/windows.png) 0 3px no-repeat; }
+  a.icon.source {
+    background: transparent url(/images/icons/source-code.png) 0 4px no-repeat; }
 
 hr.sidebar {
   border: none !important;

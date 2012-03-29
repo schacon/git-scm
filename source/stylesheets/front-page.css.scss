@@ -1,17 +1,20 @@
 #front-content {
   @include clearfix;
   overflow: visible;
-}
 
+  #front-navigation {
+    width: 618px;
+    float: left;
+    border-right: solid 1px $base-border-color;
+    margin-bottom: 24px;
+  }
+}
 
 #front-nav {
   @include clearfix;
-  width: 618px;
-  float: left;
-  border-right: solid 1px $base-border-color;
   ul {
     @extend .unstyled;
-    padding-top: 30px;
+    padding-top: 24px;
     li {
       display: block;
       width: 280px;
@@ -62,6 +65,20 @@
   }
 }
 
+#front-book {
+  padding-top: 20px;
+  float: left;
+  width: 590px;
+  border-top: solid 1px $base-border-color;
+  img {
+    float: left;
+    margin-right: 20px;
+  }
+  p {
+    margin-top: 16px;
+  }
+}
+
 $monitor-width: 313px;
 $monitor-height: 271px;
 
@@ -86,7 +103,7 @@ $monitor-height: 271px;
       display: block;
       font-weight: bold;
       font-size: 28px;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
     a {
       color: #59d6de;
@@ -97,7 +114,7 @@ $monitor-height: 271px;
     }
     a.button {
       display: block;
-      margin-top: 12px;
+      margin-top: 10px;
       border-top: solid 1px #085e64;
       border-left: solid 1px #1f6367;
       border-right: solid 1px #1f6367;
@@ -106,20 +123,67 @@ $monitor-height: 271px;
       color: #fff;
       font-size: 16px; 
       width: 224px;
+      padding: 5px 0;
       @include border-radius(2px);
       @include background-image(linear-gradient(#1c868c, #186368));
       @include box-shadow(0 1px 0 #127a81);
-      padding: 5px 0;
+      @include transition-property(background-image);
+      @include transition-duration(.30s);
       &:hover {
         @include background-image(linear-gradient(darken(#1c868c, 2%), darken(#186368, 2%)));
       }
     }
     &.mac {
       background: transparent url(/images/monitor-mac.png) top right no-repeat;
-      padding-top: 30px;
+      padding-top: 36px;
       padding-left: 40px;
+      height: $monitor-height - 36;
       width: $monitor-width - 40;
-      height: $monitor-height - 30;
     }
+    &.windows {
+      background: transparent url(/images/monitor-windows.png) top right no-repeat;
+      padding-top: 45px;
+      padding-left: 40px;
+      height: $monitor-height - 45;
+      width: $monitor-width - 40;
+    }
+    &.linux {
+      background: transparent url(/images/monitor-linux.png) top right no-repeat;
+      padding-top: 45px;
+      padding-left: 40px;
+      height: $monitor-height - 45;
+      width: $monitor-width - 40;
+    }
+  }
+
+  table {
+    position: absolute;
+    top: $monitor-height;
+    left: 24px;
+    td {
+      padding: 8px 20px 6px 0;
+    }
+    a {
+      font-weight: bold;
+    }
+  }
+}
+
+a.icon {
+  padding-left: 30px;
+  height: 30px;
+  line-height: 36px;
+  @include inline-block;
+  &.gui {
+    background: transparent url(/images/icons/gui.png) 6px 0 no-repeat;
+  }
+  &.older-releases {
+    background: transparent url(/images/icons/box.png) 0 4px no-repeat;
+  }
+  &.windows {
+    background: transparent url(/images/icons/windows.png) 0 3px no-repeat;
+  }
+  &.source {
+    background: transparent url(/images/icons/source-code.png) 0 4px no-repeat;
   }
 }

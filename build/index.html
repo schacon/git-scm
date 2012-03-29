@@ -24,7 +24,7 @@
       <header>
         <a href="/"><img src="/images/logo.png" /></a>
         <span id='tagline'>
-          --wicked-fast-version-control
+          --random-clever-tagline-here
         </span>
         <form id='search'>
           <input placeholder="Search entire site..." type="text" />
@@ -93,37 +93,45 @@
     <div id='conent-wrapper'>
       <div class='inner'>
         <div id='front-content'>
-          <nav id='front-nav'>
-            <ul>
-              <li id='nav-about'>
-                <a href="/about">
-                <img src="/images/icons/nav-about.png" />
-                <h3>About</h3>
-                <p>A technical overview of how Git works.</p>
-                </a>
-              </li>
-              <li id='nav-documentation'>
-                <a href="/documentation">
-                <img src="/images/icons/nav-documentation.png" />
-                <h3>Documentation</h3>
-                <p>Man pages, Pro Git book content, and other reference material.</p>
-                </a>
-              </li>
-              <li id='nav-downloads'>
-                <a href="/downloads">
-                <img src="/images/icons/nav-downloads.png" />
-                <h3>Downloads</h3>
-                <p>GUI clients and binary releases for all major platforms.</p>
-                </a>
-              </li>
-              <li id='nav-community'>
-                <a href="/community">
-                <img src="/images/icons/nav-community.png" />
-                <h3>Community</h3>
-                <p>Blogs, forums, mailing lists, and more.</p> </a>
-              </li>
-            </ul>
-          </nav>
+          <section id='front-navigation'>
+            <nav id='front-nav'>
+              <ul>
+                <li id='nav-about'>
+                  <a href="/about">
+                  <img src="/images/icons/nav-about.png" />
+                  <h3>About</h3>
+                  <p>A technical overview of how Git works.</p>
+                  </a>
+                </li>
+                <li id='nav-documentation'>
+                  <a href="/documentation">
+                  <img src="/images/icons/nav-documentation.png" />
+                  <h3>Documentation</h3>
+                  <p>Man pages, Pro Git book content, and other reference material.</p>
+                  </a>
+                </li>
+                <li id='nav-downloads'>
+                  <a href="/downloads">
+                  <img src="/images/icons/nav-downloads.png" />
+                  <h3>Downloads</h3>
+                  <p>GUI clients and binary releases for all major platforms.</p>
+                  </a>
+                </li>
+                <li id='nav-community'>
+                  <a href="/community">
+                  <img src="/images/icons/nav-community.png" />
+                  <h3>Community</h3>
+                  <p>Blogs, forums, mailing lists, and more.</p> </a>
+                </li>
+              </ul>
+            </nav>
+            <div id='front-book'>
+              <a href="javascript:void(0);"><img src="/images/pro-git-56x74.jpg" /></a>
+              <p>
+                The entire <strong><a href="#">Pro Git book</a></strong> written by Scott Chacon is available to <a href="#">read online for free</a>. Dead tree versions are available on <a href="#">Amazon.com</a>.
+              </p>
+            </div>
+          </section>
           <section id='front-downloads'>
             <div class='monitor mac'>
               <h4>Latest stable release</h4>
@@ -132,6 +140,16 @@
               <span class='release-date'>(3-26-2012)</span>
               <a class="button" href="#">Download for Mac</a>
             </div>
+            <table>
+              <tr>
+                <td><a class="icon gui" href="#">Mac GUI Clients</a></td>
+                <td><a class="icon older-releases" href="#">Older Releases</a></td>
+              </tr>
+              <tr>
+                <td><a class="icon windows" href="#">Windows Build</a></td>
+                <td><a class="icon source" href="#">Source Code</a></td>
+              </tr>
+            </table>
           </section>
         </div>
         <footer>
