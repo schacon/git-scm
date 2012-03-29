@@ -1,10 +1,10 @@
 %header
-  =link_to(image_tag('logo.png'), "/")
+  <a href="/"><img src="/images/logo.png" /></a>
   %span#tagline
     \--random-clever-tagline-here
 
   %form#search
-    =input_tag "text", :placeholder => "Search entire site..."
+    <input placeholder="Search entire site..." type="text" />
 
   %div#search-results
     %header Search Results
