@@ -6,10 +6,10 @@ Syntax error: Undefined mixin 'clearfix'.
 1: #front-content {
 2:   @include clearfix;
 3:   overflow: visible;
-4: 
-5:   #front-navigation {
-6:     width: 618px;
-7:     float: left;
+4: //  height: 400px;
+5: 
+6:   #front-navigation {
+7:     width: 618px;
 
 Backtrace:
 /Users/jason/Dropbox/projects/git-scm/www/source/stylesheets/front-page.css.scss:2:in `clearfix'
@@ -105,4 +105,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'clearfix'.\A         on line 2 of /Users/jason/Dropbox/projects/git-scm/www/source/stylesheets/front-page.css.scss, in `clearfix'\A         from line 2 of /Users/jason/Dropbox/projects/git-scm/www/source/stylesheets/front-page.css.scss\A \A 1: #front-content {\A 2:   @include clearfix;\A 3:   overflow: visible;\A 4: \A 5:   #front-navigation {\A 6:     width: 618px;\A 7:     float: left;"; }
+  content: "Syntax error: Undefined mixin 'clearfix'.\A         on line 2 of /Users/jason/Dropbox/projects/git-scm/www/source/stylesheets/front-page.css.scss, in `clearfix'\A         from line 2 of /Users/jason/Dropbox/projects/git-scm/www/source/stylesheets/front-page.css.scss\A \A 1: #front-content {\A 2:   @include clearfix;\A 3:   overflow: visible;\A 4: //  height: 400px;\A 5: \A 6:   #front-navigation {\A 7:     width: 618px;"; }

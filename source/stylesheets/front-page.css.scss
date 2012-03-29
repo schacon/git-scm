@@ -1,6 +1,7 @@
 #front-content {
   @include clearfix;
   overflow: visible;
+//  height: 400px;
 
   #front-navigation {
     width: 618px;
@@ -118,7 +119,7 @@ $monitor-height: 271px;
       border-top: solid 1px #085e64;
       border-left: solid 1px #1f6367;
       border-right: solid 1px #1f6367;
-      border-bottom: solid 1px #185154;
+      border-bottom: solid 1px #134143;
       text-align: center;
       color: #fff;
       font-size: 16px; 
@@ -126,7 +127,7 @@ $monitor-height: 271px;
       padding: 5px 0;
       @include border-radius(2px);
       @include background-image(linear-gradient(#1c868c, #186368));
-      @include box-shadow(0 1px 0 #127a81);
+      @include box-shadow(0 1px 0 #148a92);
       @include transition-property(background-image);
       @include transition-duration(.30s);
       &:hover {
@@ -165,6 +166,87 @@ $monitor-height: 271px;
     }
     a {
       font-weight: bold;
+    }
+  }
+}
+
+#companies-projects {
+  clear: both;
+  border-top: solid 1px $base-border-color;
+  padding-top: 20px;
+  ul {
+    @extend .unstyled;
+    li {
+      display: block;
+      float: left;
+      width: 108px;
+      height: 65px;
+      margin: 0 4px 25px 5px;
+    }
+    a {
+      display: block;
+      width: 108px;
+      height: 65px;
+      opacity: 0.85;
+      @include transition-property(opacity);
+      @include transition-duration(.30s);
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      text-indent: -9999px;
+      &:hover {
+        opacity: 1;
+      }
+      &.facebook {
+        background-image: url(/images/company-project-logos/facebook.png);
+      }
+      &.google {
+        background-image: url(/images/company-project-logos/google.png);
+      }
+      &.twitter {
+        background-image: url(/images/company-project-logos/twitter.png);
+      }
+      &.microsoft {
+        background-image: url(/images/company-project-logos/microsoft.png);
+      }
+      &.linked-in {
+        background-image: url(/images/company-project-logos/linked-in.png);
+      }
+      &.linux {
+        background-image: url(/images/company-project-logos/linux.png);
+      }
+      &.perl {
+        background-image: url(/images/company-project-logos/perl.png);
+      }
+      &.postgresql {
+        background-image: url(/images/company-project-logos/postgresql.png);
+      }
+      &.facebook {
+        background-image: url(/images/company-project-logos/facebook.png);
+      }
+      &.android {
+        background-image: url(/images/company-project-logos/android.png);
+      }
+      &.debian {
+        background-image: url(/images/company-project-logos/debian.png);
+      }
+      &.rails {
+        background-image: url(/images/company-project-logos/rails.png);
+      }
+      &.qt {
+        background-image: url(/images/company-project-logos/qt.png);
+      }
+      &.gnome {
+        background-image: url(/images/company-project-logos/gnome.png);
+      }
+      &.eclipse {
+        background-image: url(/images/company-project-logos/eclipse.png);
+      }
+      &.kde {
+        background-image: url(/images/company-project-logos/kde.png);
+      }
+      &.x {
+        background-image: url(/images/company-project-logos/x.png);
+      }
     }
   }
 }

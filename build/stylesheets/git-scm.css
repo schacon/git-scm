@@ -136,7 +136,7 @@ ol {
 li {
   line-height: 22px; }
 
-ul.unstyled, #front-nav ul, ul#reference-version, #search-results table ul, ul.content-list, ul.video-thumbnails, ul.books-list,
+ul.unstyled, #front-nav ul, #companies-projects ul, ul#reference-version, #search-results table ul, ul.content-list, ul.video-thumbnails, ul.books-list,
 ol.unstyled,
 ol#reference-version,
 ol.reference-previous-versions,
@@ -314,8 +314,9 @@ header {
   header #tagline {
     display: block;
     position: absolute;
-    top: 16px;
+    top: 11px;
     left: 120px;
+    margin-top: 1px;
     color: #9a9994;
     font-size: 24px;
     line-height: 24px; }
@@ -525,7 +526,7 @@ footer {
       border-top: solid 1px #085e64;
       border-left: solid 1px #1f6367;
       border-right: solid 1px #1f6367;
-      border-bottom: solid 1px #185154;
+      border-bottom: solid 1px #134143;
       text-align: center;
       color: #fff;
       font-size: 16px;
@@ -543,10 +544,10 @@ footer {
       background-image: -o-linear-gradient(#1c868c, #186368);
       background-image: -ms-linear-gradient(#1c868c, #186368);
       background-image: linear-gradient(#1c868c, #186368);
-      -moz-box-shadow: 0 1px 0 #127a81;
-      -webkit-box-shadow: 0 1px 0 #127a81;
-      -o-box-shadow: 0 1px 0 #127a81;
-      box-shadow: 0 1px 0 #127a81;
+      -moz-box-shadow: 0 1px 0 #148a92;
+      -webkit-box-shadow: 0 1px 0 #148a92;
+      -o-box-shadow: 0 1px 0 #148a92;
+      box-shadow: 0 1px 0 #148a92;
       -moz-transition-property: background-image;
       -webkit-transition-property: background-image;
       -o-transition-property: background-image;
@@ -588,6 +589,69 @@ footer {
       padding: 8px 20px 6px 0; }
     #front-downloads table a {
       font-weight: bold; }
+
+#companies-projects {
+  clear: both;
+  border-top: solid 1px #d8d7cf;
+  padding-top: 20px; }
+  #companies-projects ul li {
+    display: block;
+    float: left;
+    width: 108px;
+    height: 65px;
+    margin: 0 4px 25px 5px; }
+  #companies-projects ul a {
+    display: block;
+    width: 108px;
+    height: 65px;
+    opacity: 0.85;
+    -moz-transition-property: opacity;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -moz-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    text-indent: -9999px; }
+    #companies-projects ul a:hover {
+      opacity: 1; }
+    #companies-projects ul a.facebook {
+      background-image: url(/images/company-project-logos/facebook.png); }
+    #companies-projects ul a.google {
+      background-image: url(/images/company-project-logos/google.png); }
+    #companies-projects ul a.twitter {
+      background-image: url(/images/company-project-logos/twitter.png); }
+    #companies-projects ul a.microsoft {
+      background-image: url(/images/company-project-logos/microsoft.png); }
+    #companies-projects ul a.linked-in {
+      background-image: url(/images/company-project-logos/linked-in.png); }
+    #companies-projects ul a.linux {
+      background-image: url(/images/company-project-logos/linux.png); }
+    #companies-projects ul a.perl {
+      background-image: url(/images/company-project-logos/perl.png); }
+    #companies-projects ul a.postgresql {
+      background-image: url(/images/company-project-logos/postgresql.png); }
+    #companies-projects ul a.facebook {
+      background-image: url(/images/company-project-logos/facebook.png); }
+    #companies-projects ul a.android {
+      background-image: url(/images/company-project-logos/android.png); }
+    #companies-projects ul a.debian {
+      background-image: url(/images/company-project-logos/debian.png); }
+    #companies-projects ul a.rails {
+      background-image: url(/images/company-project-logos/rails.png); }
+    #companies-projects ul a.qt {
+      background-image: url(/images/company-project-logos/qt.png); }
+    #companies-projects ul a.gnome {
+      background-image: url(/images/company-project-logos/gnome.png); }
+    #companies-projects ul a.eclipse {
+      background-image: url(/images/company-project-logos/eclipse.png); }
+    #companies-projects ul a.kde {
+      background-image: url(/images/company-project-logos/kde.png); }
+    #companies-projects ul a.x {
+      background-image: url(/images/company-project-logos/x.png); }
 
 a.icon {
   padding-left: 30px;
