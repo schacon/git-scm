@@ -974,7 +974,7 @@ form#search {
           color: #9a9994;
           font-weight: normal;
           font-size: 11px; }
-        #search-results table td.matches a:hover {
+        #search-results table td.matches a:hover, #search-results table td.matches a.highlight {
           color: #fff;
           text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
           background: #55bec4;
@@ -984,7 +984,7 @@ form#search {
           background-image: -o-linear-gradient(#55bec4, #54b2b7);
           background-image: -ms-linear-gradient(#55bec4, #54b2b7);
           background-image: linear-gradient(#55bec4, #54b2b7); }
-          #search-results table td.matches a:hover span {
+          #search-results table td.matches a:hover span, #search-results table td.matches a.highlight span {
             color: #fff; }
     #search-results table ul {
       margin-bottom: 0; }
