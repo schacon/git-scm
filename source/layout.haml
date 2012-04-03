@@ -48,7 +48,7 @@
                     %li= link_to "Book", "/documentation/book", {:class => (@subsection == 'book') ? 'active' : ''}
                     %li= link_to "Videos", "/documentation/videos", {:class => (@subsection == 'videos') ? 'active' : ''}
                     %li= link_to "External Links", "/documentation/external-links", {:class => (@subsection == 'external-links') ? 'active' : ''}
-                %li= link_to "Downloads", "/downloads"
+                %li= link_to "Downloads", "/downloads", {:class => (@section == 'downloads') ? 'active' : ''}
                 %li= link_to "Community", "/community"
 
             - if content_for(:sidebar)
