@@ -138,8 +138,9 @@ var Downloads = {
       e.preventDefault();
       Downloads.userOS = $(this).attr('data-os');
       if ($(this).hasClass('filtering')) {
+        var capitalizedOS = Downloads.userOS.charAt(0).toUpperCase() + Downloads.userOS.slice(1);
         $('ul.gui-thumbnails li').switchClass("masked", "", 200);
-        $(this).html('Only show GUIs for my OS ('+Downloads.userOS+')');
+        $(this).html('Only show GUIs for my OS ('+ capitalizedOS +')');
         $(this).removeClass('filtering');
       }
       else {
