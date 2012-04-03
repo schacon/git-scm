@@ -1,6 +1,6 @@
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+a, abbr, acronym, address, big, cite, code, .man-page .listingblock .content,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
@@ -136,7 +136,8 @@ ol {
 li {
   line-height: 22px; }
 
-ul.unstyled, #front-nav ul, #companies-projects ul, ul#reference-version, #search-results table ul, ul.content-list, ul.video-thumbnails, ul.books-list,
+ul.unstyled, #front-nav ul, #companies-projects ul, ul#reference-version, #search-results table ul, ul.content-list, ul.video-thumbnails,
+ul.gui-thumbnails, ul.books-list,
 ol.unstyled,
 ol#reference-version,
 ol.reference-previous-versions,
@@ -209,6 +210,22 @@ blockquote {
     blockquote.pull-right p,
     blockquote.pull-right small {
       text-align: right; }
+
+code, .man-page .listingblock .content {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  display: block;
+  padding: 10px 15px 13px 15px;
+  margin-bottom: 1em;
+  background-color: #fff;
+  border: solid 1px #efeee6;
+  color: #f14e32;
+  font-family: Courier, monospace;
+  line-height: 18px; }
 
 q:before,
 q:after,
@@ -503,86 +520,7 @@ footer {
   #front-downloads .monitor {
     position: absolute;
     top: 0;
-    right: -12px;
-    width: 313px;
-    height: 271px;
-    color: #fff;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2); }
-    #front-downloads .monitor h4 {
-      font-weight: normal;
-      color: #fff;
-      font-size: 16px; }
-    #front-downloads .monitor span.version {
-      display: block;
-      font-weight: bold;
-      font-size: 28px;
-      margin-bottom: 6px; }
-    #front-downloads .monitor a {
-      color: #59d6de;
-      font-size: 12px; }
-    #front-downloads .monitor span.release-date {
-      font-size: 12px; }
-    #front-downloads .monitor a.button {
-      display: block;
-      margin-top: 10px;
-      border-top: solid 1px #085e64;
-      border-left: solid 1px #1f6367;
-      border-right: solid 1px #1f6367;
-      border-bottom: solid 1px #134143;
-      text-align: center;
-      color: #fff;
-      font-size: 16px;
-      width: 224px;
-      padding: 5px 0;
-      -moz-border-radius: 2px;
-      -webkit-border-radius: 2px;
-      -o-border-radius: 2px;
-      -ms-border-radius: 2px;
-      -khtml-border-radius: 2px;
-      border-radius: 2px;
-      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1c868c), color-stop(100%, #186368));
-      background-image: -webkit-linear-gradient(#1c868c, #186368);
-      background-image: -moz-linear-gradient(#1c868c, #186368);
-      background-image: -o-linear-gradient(#1c868c, #186368);
-      background-image: -ms-linear-gradient(#1c868c, #186368);
-      background-image: linear-gradient(#1c868c, #186368);
-      -moz-box-shadow: 0 1px 0 #148a92;
-      -webkit-box-shadow: 0 1px 0 #148a92;
-      -o-box-shadow: 0 1px 0 #148a92;
-      box-shadow: 0 1px 0 #148a92;
-      -moz-transition-property: background-image;
-      -webkit-transition-property: background-image;
-      -o-transition-property: background-image;
-      transition-property: background-image;
-      -moz-transition-duration: 0.3s;
-      -webkit-transition-duration: 0.3s;
-      -o-transition-duration: 0.3s;
-      transition-duration: 0.3s; }
-      #front-downloads .monitor a.button:hover {
-        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1a7e84), color-stop(100%, #165b60));
-        background-image: -webkit-linear-gradient(#1a7e84, #165b60);
-        background-image: -moz-linear-gradient(#1a7e84, #165b60);
-        background-image: -o-linear-gradient(#1a7e84, #165b60);
-        background-image: -ms-linear-gradient(#1a7e84, #165b60);
-        background-image: linear-gradient(#1a7e84, #165b60); }
-    #front-downloads .monitor.mac {
-      background: transparent url(/images/monitor-mac.png) top right no-repeat;
-      padding-top: 36px;
-      padding-left: 40px;
-      height: 235px;
-      width: 273px; }
-    #front-downloads .monitor.windows {
-      background: transparent url(/images/monitor-windows.png) top right no-repeat;
-      padding-top: 45px;
-      padding-left: 40px;
-      height: 226px;
-      width: 273px; }
-    #front-downloads .monitor.linux {
-      background: transparent url(/images/monitor-linux.png) top right no-repeat;
-      padding-top: 45px;
-      padding-left: 40px;
-      height: 226px;
-      width: 273px; }
+    right: -12px; }
   #front-downloads table {
     position: absolute;
     top: 271px;
@@ -591,6 +529,87 @@ footer {
       padding: 8px 20px 6px 0; }
     #front-downloads table a {
       font-weight: bold; }
+
+.monitor {
+  width: 313px;
+  height: 271px;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2); }
+  .monitor h4 {
+    font-weight: normal;
+    color: #fff;
+    font-size: 16px; }
+  .monitor span.version {
+    display: block;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 6px; }
+  .monitor a {
+    color: #59d6de;
+    font-size: 12px; }
+  .monitor span.release-date {
+    font-size: 12px; }
+  .monitor a.button {
+    display: block;
+    margin-top: 10px;
+    border-top: solid 1px #085e64;
+    border-left: solid 1px #1f6367;
+    border-right: solid 1px #1f6367;
+    border-bottom: solid 1px #134143;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    width: 224px;
+    padding: 5px 0;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    border-radius: 2px;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1c868c), color-stop(100%, #186368));
+    background-image: -webkit-linear-gradient(#1c868c, #186368);
+    background-image: -moz-linear-gradient(#1c868c, #186368);
+    background-image: -o-linear-gradient(#1c868c, #186368);
+    background-image: -ms-linear-gradient(#1c868c, #186368);
+    background-image: linear-gradient(#1c868c, #186368);
+    -moz-box-shadow: 0 1px 0 #148a92;
+    -webkit-box-shadow: 0 1px 0 #148a92;
+    -o-box-shadow: 0 1px 0 #148a92;
+    box-shadow: 0 1px 0 #148a92;
+    -moz-transition-property: background-image;
+    -webkit-transition-property: background-image;
+    -o-transition-property: background-image;
+    transition-property: background-image;
+    -moz-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+    .monitor a.button:hover {
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1a7e84), color-stop(100%, #165b60));
+      background-image: -webkit-linear-gradient(#1a7e84, #165b60);
+      background-image: -moz-linear-gradient(#1a7e84, #165b60);
+      background-image: -o-linear-gradient(#1a7e84, #165b60);
+      background-image: -ms-linear-gradient(#1a7e84, #165b60);
+      background-image: linear-gradient(#1a7e84, #165b60); }
+  .monitor.mac {
+    background: transparent url(/images/monitor-mac.png) top right no-repeat;
+    padding-top: 36px;
+    padding-left: 40px;
+    height: 235px;
+    width: 273px; }
+  .monitor.windows {
+    background: transparent url(/images/monitor-windows.png) top right no-repeat;
+    padding-top: 45px;
+    padding-left: 40px;
+    height: 226px;
+    width: 273px; }
+  .monitor.linux {
+    background: transparent url(/images/monitor-linux.png) top right no-repeat;
+    padding-top: 45px;
+    padding-left: 40px;
+    height: 226px;
+    width: 273px; }
 
 #companies-projects {
   clear: both;
@@ -1016,20 +1035,6 @@ form#search {
   .man-page div.verseblock-content em {
     font-weight: bold;
     font-style: normal; }
-.man-page .listingblock .content {
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -o-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -khtml-border-radius: 3px;
-  border-radius: 3px;
-  padding: 10px 15px 13px 15px;
-  margin-bottom: 1em;
-  background-color: #fff;
-  border: solid 1px #efeee6;
-  color: #f14e32;
-  font-family: Courier, monospace;
-  line-height: 18px; }
 .man-page .admonitionblock table {
   margin-bottom: 1em; }
   .man-page .admonitionblock table td {
@@ -1054,19 +1059,25 @@ ol.book-toc {
   ol.book-toc a {
     padding-left: 4px; }
 
-.content-list, ul.video-thumbnails, ul.books-list {
+.content-list, ul.video-thumbnails,
+ul.gui-thumbnails, ul.books-list {
   margin-left: 0; }
-  .content-list li, ul.video-thumbnails li, ul.books-list li {
+  .content-list li, ul.video-thumbnails li,
+  ul.gui-thumbnails li, ul.books-list li {
     margin-bottom: 1em; }
-  .content-list .description, ul.video-thumbnails .description, ul.books-list .description {
+  .content-list .description, ul.video-thumbnails .description,
+  ul.gui-thumbnails .description, ul.books-list .description {
     font-size: 12px;
     line-height: 15.4px; }
 
-ul.video-thumbnails {
+ul.video-thumbnails,
+ul.gui-thumbnails {
   margin-top: 1em; }
-  ul.video-thumbnails li {
+  ul.video-thumbnails li,
+  ul.gui-thumbnails li {
     margin-bottom: 2em; }
-    ul.video-thumbnails li img {
+    ul.video-thumbnails li img,
+    ul.gui-thumbnails li img {
       display: block;
       margin-bottom: 5px;
       padding: 3px;
@@ -1090,3 +1101,8 @@ ul.books-list li {
       border: none;
       margin-top: 2em;
       display: block; }
+
+table.binaries {
+  margin-bottom: 20px; }
+  table.binaries td {
+    padding-right: 12px; }

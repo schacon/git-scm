@@ -10,7 +10,8 @@
   }
 }
 
-ul.video-thumbnails {
+ul.video-thumbnails,
+ul.gui-thumbnails {
   @extend .content-list;
   margin-top: 1em;
   li {
@@ -45,5 +46,12 @@ ul.books-list {
         display: block;
       }
     }
+  }
+}
+
+table.binaries {
+  margin-bottom: 20px;
+  td {
+    padding-right: 12px;
   }
 }

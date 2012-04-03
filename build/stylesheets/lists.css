@@ -11,8 +11,8 @@ Syntax error: Undefined variable: "$base-line-height".
 10:   }
 11: }
 12: 
-13: ul.video-thumbnails {
-14:   @extend .content-list;
+13: ul.video-thumbnails,
+14: ul.gui-thumbnails {
 
 Backtrace:
 /Users/jason/Dropbox/projects/git-scm/www/source/stylesheets/lists.css.scss:9
@@ -121,4 +121,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$base-line-height\".\A         on line 9 of /Users/jason/Dropbox/projects/git-scm/www/source/stylesheets/lists.css.scss\A \A 4:   li {\A 5:     margin-bottom: 1em;\A 6:   }\A 7:   .description {\A 8:     font-size: 12px;\A 9:     line-height: $base-line-height * 0.7; \A 10:   }\A 11: }\A 12: \A 13: ul.video-thumbnails {\A 14:   @extend .content-list;"; }
+  content: "Syntax error: Undefined variable: \"$base-line-height\".\A         on line 9 of /Users/jason/Dropbox/projects/git-scm/www/source/stylesheets/lists.css.scss\A \A 4:   li {\A 5:     margin-bottom: 1em;\A 6:   }\A 7:   .description {\A 8:     font-size: 12px;\A 9:     line-height: $base-line-height * 0.7; \A 10:   }\A 11: }\A 12: \A 13: ul.video-thumbnails,\A 14: ul.gui-thumbnails {"; }
