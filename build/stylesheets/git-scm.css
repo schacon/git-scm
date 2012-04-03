@@ -248,6 +248,57 @@ small {
 cite {
   font-style: normal; }
 
+a.subtle-button {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  border-top: solid 1px #dedcd4;
+  border-left: solid 1px #dedcd4;
+  border-right: solid 1px #dedcd4;
+  border-bottom: solid 1px #cdcbc4;
+  text-align: center;
+  font-size: 12px;
+  padding: 3px 20px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f1f1e9), color-stop(100%, #eae9e1));
+  background-image: -webkit-linear-gradient(#f1f1e9, #eae9e1);
+  background-image: -moz-linear-gradient(#f1f1e9, #eae9e1);
+  background-image: -o-linear-gradient(#f1f1e9, #eae9e1);
+  background-image: -ms-linear-gradient(#f1f1e9, #eae9e1);
+  background-image: linear-gradient(#f1f1e9, #eae9e1);
+  -moz-box-shadow: 0 1px 0 #f1f1e9;
+  -webkit-box-shadow: 0 1px 0 #f1f1e9;
+  -o-box-shadow: 0 1px 0 #f1f1e9;
+  box-shadow: 0 1px 0 #f1f1e9;
+  -moz-transition-property: background-image;
+  -webkit-transition-property: background-image;
+  -o-transition-property: background-image;
+  transition-property: background-image;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+  a.subtle-button {
+    *display: inline; }
+  a.subtle-button:hover {
+    color: #0388a6;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #edede3), color-stop(100%, #e6e5db));
+    background-image: -webkit-linear-gradient(#edede3, #e6e5db);
+    background-image: -moz-linear-gradient(#edede3, #e6e5db);
+    background-image: -o-linear-gradient(#edede3, #e6e5db);
+    background-image: -ms-linear-gradient(#edede3, #e6e5db);
+    background-image: linear-gradient(#edede3, #e6e5db); }
+
+a#gui-os-filter {
+  margin-top: 15px; }
+
 body {
   font-size: 14px;
   line-height: 22px;
@@ -1082,6 +1133,9 @@ ul.gui-thumbnails {
       margin-bottom: 5px;
       padding: 3px;
       border: solid 1px #d8d7cf; }
+
+ul.gui-thumbnails li.masked {
+  opacity: 0.1; }
 
 ul.books-list li {
   overflow: hidden;

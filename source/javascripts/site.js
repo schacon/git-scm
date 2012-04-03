@@ -3,6 +3,7 @@ $(document).ready(function() {
   Search.init();
   Dropdowns.init();
   Forms.init();
+  Downloads.init();
 });
 
 var BrowserFallbacks = {
@@ -121,6 +122,31 @@ var Forms = {
   observeCopyableInputs: function() {
     $('input.copyable').click(function() {
       $(this).select();
+    });
+  }
+}
+
+var Downloads = {
+  userOS: '',
+
+  init: function() {
+    Downloads.observeGUIOSFilter();
+  },
+
+  observeGUIOSFilter: function() {
+    $('a#gui-os-filter').click(function(e) {
+      e.preventDefault();
+      Downloads.userOS = $(this).attr('data-os');
+      if ($(this).hasClass('filtering')) {
+        $('ul.gui-thumbnails li').switchClass("masked", "", 200);
+        $(this).html('Only show GUIs for my OS ('+Downloads.userOS+')');
+        $(this).removeClass('filtering');
+      }
+      else {
+        $('ul.gui-thumbnails li').not("."+Downloads.userOS).switchClass("", "masked", 200);
+        $(this).html('Show GUIs for all OSes');
+        $(this).addClass('filtering');
+      }
     });
   }
 }

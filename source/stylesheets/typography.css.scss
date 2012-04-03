@@ -236,3 +236,27 @@ small {
 cite {
   font-style: normal;
 }
+
+a.subtle-button {
+  @include inline-block;
+  border-top: solid 1px #dedcd4;
+  border-left: solid 1px #dedcd4;
+  border-right: solid 1px #dedcd4;
+  border-bottom: solid 1px #cdcbc4;
+  text-align: center;
+  font-size: 12px; 
+  padding: 3px 20px;
+  @include border-radius(3px);
+  @include background-image(linear-gradient(#f1f1e9, #eae9e1));
+  @include box-shadow(0 1px 0 #f1f1e9);
+  @include transition-property(background-image);
+  @include transition-duration(.30s);
+  &:hover {
+    color: $link-color;
+    @include background-image(linear-gradient(darken(#f1f1e9, 2%), darken(#eae9e1, 2%)));
+  }
+}
+
+a#gui-os-filter {
+  margin-top: 15px;
+}
