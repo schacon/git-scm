@@ -1102,7 +1102,5 @@ ul.books-list li {
       margin-top: 2em;
       display: block; }
 
-table.binaries {
-  margin-bottom: 20px; }
-  table.binaries td {
-    padding-right: 12px; }
+table.binaries td {
+  padding-right: 12px; }

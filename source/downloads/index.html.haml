@@ -71,35 +71,36 @@
   %h2 Binaries
   %div.two-column
     %div.column-left
-      %table.binaries
-        %tr
-          %td
-            %strong Debian
-          %td
-            =link_to "Stable", "http://packages.debian.org/stable/devel/git" 
-            <span class="light">|</span>
-            =link_to "Testing", "http://packages.debian.org/testing/devel/git" 
-            <span class="light">|</span>
-            =link_to "Unstable", "http://packages.debian.org/unstable/devel/git"
-        %tr
-          %td 
-            %strong Windows
-          %td 
-            =link_to "Cygwin", "http://www.cygwin.com/setup.exe"
-            <span class="light">|</span>
-            =link_to "msysGit", "http://code.google.com/p/msysgit/downloads/list"
-        %tr
-          %td
-            %strong Mac
-          %td 
-            =link_to "Stable", "http://code.google.com/p/git-osx-installer/downloads/list?can=3"
-        %tr
-          %td 
-            %strong Solaris
-          %td 
-            =link_to "v8-10", "http://sunfreeware.com"
-            <span class="light">|</span>
-            =link_to "v9-10", "http://opencsw.org/packages/git/"
+      %div.callout
+        %table.binaries
+          %tr
+            %td
+              %strong Debian
+            %td
+              =link_to "Stable", "http://packages.debian.org/stable/devel/git" 
+              <span class="light">|</span>
+              =link_to "Testing", "http://packages.debian.org/testing/devel/git" 
+              <span class="light">|</span>
+              =link_to "Unstable", "http://packages.debian.org/unstable/devel/git"
+          %tr
+            %td 
+              %strong Windows
+            %td 
+              =link_to "Cygwin", "http://www.cygwin.com/setup.exe"
+              <span class="light">|</span>
+              =link_to "msysGit", "http://code.google.com/p/msysgit/downloads/list"
+          %tr
+            %td
+              %strong Mac
+            %td 
+              =link_to "Stable", "http://code.google.com/p/git-osx-installer/downloads/list?can=3"
+          %tr
+            %td 
+              %strong Solaris
+            %td 
+              =link_to "v8-10", "http://sunfreeware.com"
+              <span class="light">|</span>
+              =link_to "v9-10", "http://opencsw.org/packages/git/"
 
       %p
         <a href="http://code.google.com/p/git-core/downloads/list">Older releases</a> are available and the <a href="https://github.com/gitster/git">Git source repository</a> is on GitHub.
