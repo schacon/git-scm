@@ -47,6 +47,7 @@ h2 {
   line-height: $base-line-height * 2;
   color: $orange;
   font-weight: bold;
+  margin-top: 20px;
   small {
     font-size: 18px;
   }
@@ -106,6 +107,9 @@ ul.unstyled,
 ol.unstyled {
   margin-left: 0;
   list-style: none;
+}
+ul.bullets li {
+  padding-bottom: 10px;
 }
 
 // Description Lists
@@ -224,6 +228,28 @@ address {
   margin-bottom: $base-line-height;
   line-height: $base-line-height;
   font-style: normal;
+}
+
+// Tables
+table {
+  th {
+    font-weight: bold;
+  }
+  &.data {
+    margin-bottom: 24px;
+    th, td {
+      padding: 2px 0;
+      border-bottom: solid 1px lighten($base-border-color, 10%);
+    }
+  }
+  td.sweet {
+    color: #25b028;
+    font-weight: bold;
+  }
+  td.compare {
+    color: $orange;
+    font-weight: bold;
+  }
 }
 
 // Misc

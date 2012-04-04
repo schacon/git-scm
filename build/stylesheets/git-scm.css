@@ -89,7 +89,8 @@ h2 {
   font-size: 18px;
   line-height: 44px;
   color: #f14e32;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 20px; }
   h2 small {
     font-size: 18px; }
 
@@ -144,6 +145,9 @@ ol.reference-previous-versions,
 ol.content-list {
   margin-left: 0;
   list-style: none; }
+
+ul.bullets li {
+  padding-bottom: 10px; }
 
 dl {
   margin-bottom: 22px; }
@@ -238,6 +242,20 @@ address {
   margin-bottom: 22px;
   line-height: 22px;
   font-style: normal; }
+
+table th {
+  font-weight: bold; }
+table.data {
+  margin-bottom: 24px; }
+  table.data th, table.data td {
+    padding: 2px 0;
+    border-bottom: solid 1px #efeeeb; }
+table td.sweet {
+  color: #25b028;
+  font-weight: bold; }
+table td.compare {
+  color: #f14e32;
+  font-weight: bold; }
 
 .light {
   color: #9a9994; }

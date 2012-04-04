@@ -23,7 +23,7 @@
             Git is a <strong>free</strong> & <strong>open source, distributed version control system</strong> designed to handle everything from small to very large projects with speed and efficiency.
 
           %p
-            Git is <a href="#">easy to learn</a>, has <a href="#">lightening fast performance</a> and a <a href="#">tiny footprint</a>. It outclasses SCM tools like Mercurial, Subversion, CVS, Perforce, and Team Foundation Server with features like <a href="#">cheap local branching</a>, <a href="#">distributed workflows</a>, and convenient <a href="#">staging areas</a>.
+            Git is <a href="/documentation">easy to learn</a>, has <a href="/about/#git-is-fast">lightening fast performance</a> and a <a href="/about/#git-is-small">tiny footprint</a>. It outclasses SCM tools like Mercurial, Subversion, CVS, Perforce, and Team Foundation Server with features like <a href="/about/#cheap-local-branching">cheap local branching</a>, <a href="/about/#distributed">distributed workflows</a>, and convenient <a href="/about/#staging-area">staging areas</a>.
 
           <img class="illustration" src="images/branching-illustration.png" />
 
@@ -38,7 +38,7 @@
           %aside.sidebar
             %nav
               %ul
-                %li= link_to "About", "/about"
+                %li= link_to "About", "/about", {:class => (@section == 'about') ? 'active' : ''}
                 %li
                   =link_to "Documentation", "/documentation", {:class => (@section == 'documentation') ? 'active' : ''}
                   %ul 
@@ -47,7 +47,7 @@
                     %li= link_to "Videos", "/documentation/videos", {:class => (@subsection == 'videos') ? 'active' : ''}
                     %li= link_to "External Links", "/documentation/external-links", {:class => (@subsection == 'external-links') ? 'active' : ''}
                 %li= link_to "Downloads", "/downloads", {:class => (@section == 'downloads') ? 'active' : ''}
-                %li= link_to "Community", "/community"
+                %li= link_to "Community", "/community", {:class => (@section == 'community') ? 'active' : ''}
 
             - if content_for(:sidebar)
               %hr.sidebar
