@@ -4,6 +4,7 @@ $(document).ready(function() {
   Dropdowns.init();
   Forms.init();
   Downloads.init();
+  AboutContent.init();
 });
 
 var BrowserFallbacks = {
@@ -148,6 +149,25 @@ var Downloads = {
         $(this).html('Show GUIs for all OSes');
         $(this).addClass('filtering');
       }
+    });
+  }
+}
+
+var AboutContent = {
+  init: function() {
+    AboutContent.observeReadMoreLinks();
+  },
+
+  observeReadMoreLinks: function() {
+    $('a.read-more').live('click', function(e) {
+      e.preventDefault();
+      $(this).closest('p').next('.more').slideDown('fast');
+      $(this).html('← Read Less').removeClass('read-more').addClass('read-less');
+    });
+    $('a.read-less').live('click', function(e) {
+      e.preventDefault();
+      $(this).closest('p').next('.more').slideUp('fast');
+      $(this).html('Read More →').removeClass('read-less').addClass('read-more');
     });
   }
 }
