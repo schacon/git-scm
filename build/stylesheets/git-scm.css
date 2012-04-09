@@ -426,6 +426,7 @@ aside nav ul {
       aside nav ul li a.active, aside nav ul li a:hover {
         color: #f14e32; }
     aside nav ul li ul {
+      display: none;
       margin-top: 0.3em;
       margin-left: 20px;
       font-weight: normal;
@@ -434,6 +435,8 @@ aside nav ul {
         margin-bottom: 0; }
         aside nav ul li ul li a.active {
           font-weight: bold; }
+      aside nav ul li ul.expanded {
+        display: block; }
 
 a.dropdown-trigger {
   padding: 4px 5px;

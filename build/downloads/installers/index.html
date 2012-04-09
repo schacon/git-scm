@@ -94,7 +94,7 @@
               <li>
                 <a class="active" href="/downloads">Downloads</a>
                 <ul class='expanded'>
-                  <li><a class="" href="/downloads/installers">Git Installers</a></li>
+                  <li><a class="active" href="/downloads/installers">Git Installers</a></li>
                   <li><a class="" href="/downloads/guis">GUI Clients</a></li>
                   <li><a class="" href="/downloads/logos">Logos</a></li>
                 </ul>
@@ -111,25 +111,84 @@
         </aside>
         <div id='content'>
           <div id='main'>
-            <h1>Downloads</h1>
-            <h2>Git Installers</h2>
+            <h1>Git Installers</h1>
+            <div class='two-column'>
+              <div class='column-left'>
+                <div class='callout'>
+                  <table class='binaries'>
+                    <tr>
+                      <td>
+                        <strong>Debian</strong>
+                      </td>
+                      <td>
+                        <a href="http://packages.debian.org/stable/devel/git">Stable</a>
+                        <span class="light">|</span>
+                        <a href="http://packages.debian.org/testing/devel/git">Testing</a>
+                        <span class="light">|</span>
+                        <a href="http://packages.debian.org/unstable/devel/git">Unstable</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Windows</strong>
+                      </td>
+                      <td>
+                        <a href="http://www.cygwin.com/setup.exe">Cygwin</a>
+                        <span class="light">|</span>
+                        <a href="http://code.google.com/p/msysgit/downloads/list">msysGit</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Mac</strong>
+                      </td>
+                      <td>
+                        <a href="http://code.google.com/p/git-osx-installer/downloads/list?can=3">Stable</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Solaris</strong>
+                      </td>
+                      <td>
+                        <a href="http://sunfreeware.com">v8-10</a>
+                        <span class="light">|</span>
+                        <a href="http://opencsw.org/packages/git/">v9-10</a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p>
+                  <a href="http://code.google.com/p/git-core/downloads/list">Older releases</a> are available and the <a href="https://github.com/gitster/git">Git source repository</a> is on GitHub.
+                </p>
+                <p>
+                  Daily snapshots of the main Git development branch are available at <a href="http://codemonkey.org">codemonkey.org</a>.
+                </p>
+              </div>
+              <div class='column-right'>
+                <div class='monitor mac'>
+                  <h4>Latest stable release</h4>
+                  <span class='version'>1.7.9.5</span>
+                  <a href="javascript:void(0);">Release Notes</a>
+                  <span class='release-date'>(2012-26-03)</span>
+                  <a class="button" href="#">Download for Mac</a>
+                </div>
+              </div>
+            </div>
+            <h2>Git via Git</h2>
             <p>
-              Git is easy to install with a pre-built binary or by compiling the source yourself. Installers are available for Windows, Mac, Linux, and Solaris.
+              If you already have Git installed, you can get the latest development version via Git itself:
+            </p>
+            <code>git clone git://github.com/gitster/git.git</code>
+            <p>
+              If you have problems connecting (Git uses port 9418), you can try to access the repository over the HTTP protocol:
+            </p>
+            <code>git clone http://github.com/gitster/git.git</code>
+            <p>
+              (this method works even behind firewalls and such).
             </p>
             <p>
-              <strong><a href="/downloads/installers">View Git Installers →</a></strong>
-            </p>
-            <h2>GUI Clients</h2>
-            <p>
-              Git comes with a built-in GUI (<strong>git-gui</strong>, <strong>gitk</strong>), but there are several third-party tools for users looking for platform-specific experience.
-            </p>
-            <p>
-              <strong><a href="/downloads/guis">View GUI Clients →</a></strong>
-            </p>
-            <h2>Logos</h2>
-            <p>Various Git logos in PNG (bitmap) and EPS (vector) formats are available for use in online and print projects.</p>
-            <p>
-              <strong><a href="/downloads/guis">View Logos →</a></strong>
+              You can also always browse the current contents of the git repository using either the <a href="#">gitweb or <a href="#">GitHub</a> web interface.
             </p>
           </div>
         </div>

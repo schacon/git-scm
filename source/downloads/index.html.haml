@@ -9,189 +9,26 @@
 %div#main
   %h1 Downloads
 
+  %h2 Git Installers
+
+  %p
+    Git is easy to install with a pre-built binary or by compiling the source yourself. Installers are available for Windows, Mac, Linux, and Solaris.
+
+  %p
+    %strong= link_to "View Git Installers →", "/downloads/installers"
+
   %h2 GUI Clients
 
   %p
-    Git comes with a built-in GUI (<strong>git-gui</strong>, <strong>gitk</strong>), but there are several third-party tools for users who are looking for platform-specific experience.
+    Git comes with a built-in GUI (<strong>git-gui</strong>, <strong>gitk</strong>), but there are several third-party tools for users looking for platform-specific experience.
 
   %p
-    =link_to "Only show GUIs for my OS (Windows)", "#", {:class => "subtle-button", :id => "gui-os-filter", 'data-os' => 'windows'}
-
-  %div.two-column
-    %div.column-left
-      %ul.gui-thumbnails
-        %li.mac
-          =link_to(image_tag('guis/github-for-mac.png'), "http://mac.github.com/")
-          %h4= link_to "GitHub for Mac", "http://mac.github.com/"
-          %p.description
-            <strong>Platforms:</strong> Mac</br>
-            <strong>Price:</strong> Free
-        %li.mac
-          =link_to(image_tag('guis/gitx.png'), "http://gitx.frim.nl/")
-          %h4= link_to "GitX", "http://gitx.frim.nl/"
-          %p.description
-            <strong>Platforms:</strong> Mac</br>
-            <strong>Price:</strong> Free
-        %li.mac
-          =link_to(image_tag('guis/sourcetree.png'), "http://www.sourcetreeapp.com/")
-          %h4= link_to "SourceTree", "http://www.sourcetreeapp.com/"
-          %p.description
-            <strong>Platforms:</strong> Mac</br>
-            <strong>Price:</strong> Free
-        %li.mac.windows.linux
-          =link_to(image_tag('guis/smartgit.png'), "http://www.syntevo.com/smartgit/")
-          %h4= link_to "SmartGit", "http://www.syntevo.com/smartgit/"
-          %p.description
-            <strong>Platforms:</strong> Windows, Mac, Linux</br>
-            <strong>Price:</strong> $79/user / Free for non-commercial use 
-    %div.column-right
-      %ul.gui-thumbnails
-        %li.mac
-          =link_to(image_tag('guis/tower.png'), "http://www.git-tower.com/")
-          %h4= link_to "Tower", "http://www.git-tower.com/"
-          %p.description
-            <strong>Platforms:</strong> Mac</br>
-            <strong>Price:</strong> $59/user (Free 30 day trial)
-        %li.mac
-          =link_to(image_tag('guis/gitbox.png'), "http://www.gitboxapp.com/")
-          %h4= link_to "Gitbox", "http://www.gitboxapp.com/"
-          %p.description
-            <strong>Platforms:</strong> Mac</br>
-            <strong>Price:</strong> $9.99 / Free for personal use
-        %li.windows
-          =link_to(image_tag('guis/git-extensions.png'), "http://code.google.com/p/gitextensions/")
-          %h4= link_to "Git Extensions", "http://code.google.com/p/gitextensions/"
-          %p.description
-            <strong>Platforms:</strong> Windows</br>
-            <strong>Price:</strong> Free
-        %li.mac.windows.linux
-          =link_to(image_tag('guis/git-cola.png'), "http://git-cola.github.com/")
-          %h4= link_to "git-cola", "http://git-cola.github.com/"
-          %p.description
-            <strong>Platforms:</strong> Windows, Mac, Linux</br>
-            <strong>Price:</strong> Free
-
-  %h2 Binaries
-  %div.two-column
-    %div.column-left
-      %div.callout
-        %table.binaries
-          %tr
-            %td
-              %strong Debian
-            %td
-              =link_to "Stable", "http://packages.debian.org/stable/devel/git" 
-              <span class="light">|</span>
-              =link_to "Testing", "http://packages.debian.org/testing/devel/git" 
-              <span class="light">|</span>
-              =link_to "Unstable", "http://packages.debian.org/unstable/devel/git"
-          %tr
-            %td 
-              %strong Windows
-            %td 
-              =link_to "Cygwin", "http://www.cygwin.com/setup.exe"
-              <span class="light">|</span>
-              =link_to "msysGit", "http://code.google.com/p/msysgit/downloads/list"
-          %tr
-            %td
-              %strong Mac
-            %td 
-              =link_to "Stable", "http://code.google.com/p/git-osx-installer/downloads/list?can=3"
-          %tr
-            %td 
-              %strong Solaris
-            %td 
-              =link_to "v8-10", "http://sunfreeware.com"
-              <span class="light">|</span>
-              =link_to "v9-10", "http://opencsw.org/packages/git/"
-
-      %p
-        <a href="http://code.google.com/p/git-core/downloads/list">Older releases</a> are available and the <a href="https://github.com/gitster/git">Git source repository</a> is on GitHub.
-
-      %p
-        Daily snapshots of the main Git development branch are available at <a href="http://codemonkey.org">codemonkey.org</a>.
-
-    %div.column-right
-      = partial 'shared/monitor'
-
-
-  %h2 Git via Git
-
-  %p
-    If you already have Git installed, you can get the latest development version via Git itself:
-
-  %code
-    git clone git://github.com/gitster/git.git
-
-  %p
-    If you have problems connecting (Git uses port 9418), you can try to access the repository over the HTTP protocol:
-
-  %code
-    git clone http://github.com/gitster/git.git
-
-  %p
-    (this method works even behind firewalls and such).
-
-  %p
-    You can also always browse the current contents of the git repository using either the <a href="#">gitweb or <a href="#">GitHub</a> web interface.
+    %strong= link_to "View GUI Clients →", "/downloads/guis"
 
 
   %h2 Logos
 
-  %div.two-column
-    %div.column-left
-      %ul.content-list
-        %li
-          =link_to(image_tag('logos/2color-lightbg.png'))
-          %h4 Full color Git logo for light backgrounds
-          %p.description
-            =link_to "PNG (bitmap)", "logos/downloads/Git-Logo-2Color.png"
-            &middot;
-            =link_to "EPS (vector)", "logos/downloads/Git-Logo-2Color.eps"
-        %li
-          =link_to(image_tag('logos/1color-orange-lightbg.png'))
-          %h4 Orange Git logo for light backgrounds
-          %p.description
-            =link_to "PNG (bitmap)", "logos/downloads/Git-Logo-1788C.png"
-            &middot;
-            =link_to "EPS (vector)", "logos/downloads/Git-Logo-1788C.eps"
-        %li
-          =link_to(image_tag('logos/1color-lightbg.png'))
-          %h4 One color Git logo for dark backgrounds
-          %p.description
-            =link_to "PNG (bitmap)", "logos/downloads/Git-Logo-Black.png"
-            &middot;
-            =link_to "EPS (vector)", "logos/downloads/Git-Logo-Black.eps"
-        %li
-          =link_to(image_tag('logos/1color-darkbg.png'))
-          %h4 One color Git logo for dark backgrounds
-          %p.description
-            =link_to "PNG (bitmap)", "logos/downloads/Git-Logo-White.png"
-            &middot;
-            =link_to "EPS (vector)", "logos/downloads/Git-Logo-White.eps"
+  %p Various Git logos in PNG (bitmap) and EPS (vector) formats are available for use in online and print projects. 
 
-    %div.column-right
-      %ul.content-list
-        %li
-          =link_to(image_tag('logos/logomark-orange.png'))
-          %h4 Orange logomark for light backgrounds
-          %p.description
-            =link_to "PNG (bitmap)", "logos/downloads/Git-Icon-1788C.png"
-            &middot;
-            =link_to "EPS (vector)", "logos/downloads/Git-Icon-1788C.eps"
-        %li
-          =link_to(image_tag('logos/logomark-black.png'))
-          %h4 Black logomark for light backgrounds
-          %p.description
-            =link_to "PNG (bitmap)", "logos/downloads/Git-Icon-Black.png"
-            &middot;
-            =link_to "EPS (vector)", "logos/downloads/Git-Icon-Black.eps"
-        %li
-          =link_to(image_tag('logos/logomark-white.png'))
-          %h4 White logomark for dark backgrounds
-          %p.description
-            =link_to "PNG (bitmap)", "logos/downloads/Git-Icon-White.png"
-            &middot;
-            =link_to "EPS (vector)", "logos/downloads/Git-Icon-White.eps"
-
-
+  %p
+    %strong= link_to "View Logos →", "/downloads/guis"

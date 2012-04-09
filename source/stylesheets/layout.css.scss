@@ -115,6 +115,7 @@ aside nav ul {
       }
     }
     ul {
+      display: none;
       margin-top: 0.3em;
       margin-left: 20px;
       font-weight: normal;
@@ -124,6 +125,9 @@ aside nav ul {
         a.active {
           font-weight: bold;
         }
+      }
+      &.expanded {
+        display: block;
       }
     }
   }
