@@ -454,13 +454,13 @@ a.dropdown-trigger {
     -ms-border-top-right-radius: 3px;
     -o-border-top-right-radius: 3px;
     border-top-right-radius: 3px;
-    border: solid 1px #d8d7cf;
+    border: solid 1px #c6c4b8;
     border-bottom: none; }
 
 .dropdown-panel {
   display: none;
   background-color: #fff;
-  border: solid 1px #d8d7cf;
+  border: solid 1px #c6c4b8;
   position: absolute;
   z-index: 199;
   -webkit-border-radius: 3px;
@@ -824,14 +824,30 @@ aside.sidebar {
     top: 33px; }
 
 #previous-versions-dropdown {
-  padding-top: 6px; }
+  padding-top: 6px;
+  width: 330px; }
+  #previous-versions-dropdown header {
+    padding: 0 12px;
+    margin: 0;
+    font-size: 12px;
+    font-weight: normal; }
   #previous-versions-dropdown footer {
     margin-top: 0;
     padding: 4px 12px;
     background-color: #eae9e0;
     font-weight: normal;
     font-size: 11px;
-    color: #4e443c; }
+    color: #4e443c;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -ms-border-bottom-left-radius: 3px;
+    -o-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -ms-border-bottom-right-radius: 3px;
+    -o-border-bottom-right-radius: 3px;
+    border-bottom-right-radius: 3px; }
     #previous-versions-dropdown footer input {
       font-size: 11px;
       border: solid 1px #e2e0d8;
@@ -876,13 +892,16 @@ aside.sidebar {
       float: left; }
 
 ol.reference-previous-versions {
-  margin-bottom: 0; }
+  margin-top: 3px;
+  margin-bottom: 0;
+  border-top: dotted 1px #e3e3e1; }
   ol.reference-previous-versions li a {
     overflow: hidden;
     *zoom: 1;
     top: 0 !important;
     display: block;
-    padding: 2px 12px; }
+    padding: 2px 12px;
+    border-bottom: dotted 1px #e3e3e1; }
     ol.reference-previous-versions li a:hover {
       background-color: #edf7f8; }
     ol.reference-previous-versions li a.more {
@@ -890,39 +909,64 @@ ol.reference-previous-versions {
     ol.reference-previous-versions li a span.version {
       float: left;
       min-width: 40px; }
-    ol.reference-previous-versions li a span.changes {
-      padding-left: 18px;
-      padding-right: 16px;
-      font-size: 11px;
-      font-weight: normal;
-      color: #4e443c;
-      float: left; }
-      ol.reference-previous-versions li a span.changes.yes {
-        background: transparent url(/images/icons/change-yes.png) 10px 8px no-repeat; }
-      ol.reference-previous-versions li a span.changes.no {
-        background: transparent url(/images/icons/change-no.png) 10px 8px no-repeat;
-        color: #9a9994; }
+    ol.reference-previous-versions li a span.diff {
+      padding-left: 12px;
+      padding-right: 16px; }
+      ol.reference-previous-versions li a span.diff img {
+        display: -moz-inline-box;
+        -moz-box-orient: vertical;
+        display: inline-block;
+        vertical-align: middle;
+        *vertical-align: auto;
+        margin-right: -1px; }
+        ol.reference-previous-versions li a span.diff img {
+          *display: inline; }
     ol.reference-previous-versions li a em.date {
       float: right;
+      margin-right: 150px;
       font-size: 11px;
       color: #9a9994;
-      font-weight: normal; }
+      font-weight: normal;
+      font-style: normal; }
+    ol.reference-previous-versions li a.more {
+      border-bottom: none; }
   ol.reference-previous-versions li.no-change {
     overflow: hidden;
     *zoom: 1;
-    padding: 2px 12px;
+    position: absolute;
+    right: 0px;
+    margin-top: -6px;
+    width: auto;
+    z-index: 10;
+    padding: 0;
     font-weight: normal;
     font-size: 11px;
     line-height: 1.2;
     color: #9a9994;
-    background-color: #fcfcfa;
     text-align: center; }
-    ol.reference-previous-versions li.no-change span.version {
-      float: left; }
-    ol.reference-previous-versions li.no-change span.changes.no {
-      float: right;
-      font-size: 11px;
-      font-style: italic; }
+    ol.reference-previous-versions li.no-change span {
+      float: left;
+      display: -moz-inline-box;
+      -moz-box-orient: vertical;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      -moz-border-radius-topleft: 10px;
+      -webkit-border-top-left-radius: 10px;
+      -ms-border-top-left-radius: 10px;
+      -o-border-top-left-radius: 10px;
+      border-top-left-radius: 10px;
+      -moz-border-radius-bottomleft: 10px;
+      -webkit-border-bottom-left-radius: 10px;
+      -ms-border-bottom-left-radius: 10px;
+      -o-border-bottom-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      font-size: 10px;
+      font-style: italic;
+      background-color: #f5f5f3;
+      padding: 0 5px; }
+      ol.reference-previous-versions li.no-change span {
+        *display: inline; }
 
 .callout.quickref {
   background: #e9e8e0 url(/images/icons/document.png) 14px 7px no-repeat;

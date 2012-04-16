@@ -143,7 +143,7 @@ a.dropdown-trigger {
     background-color: #fff;
     @include border-top-left-radius(3px);
     @include border-top-right-radius(3px);
-    border: solid 1px $base-border-color;
+    border: solid 1px darken($base-border-color, 8%);
     border-bottom: none;
   }
 }
@@ -151,7 +151,7 @@ a.dropdown-trigger {
 .dropdown-panel {
   display: none;
   background-color: #fff;
-  border: solid 1px $base-border-color;
+  border: solid 1px darken($base-border-color, 8%);
   position: absolute;
   z-index: 199;
   @include border-radius(3px);
