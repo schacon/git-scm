@@ -378,6 +378,16 @@ aside {
     #main .callout p {
       margin-bottom: 0; }
 
+.callout#more-downloads h2 {
+  margin-top: 0; }
+.callout#more-downloads .column-left {
+  width: 47%; }
+.callout#more-downloads .column-right {
+  width: 45%; }
+.callout#more-downloads p {
+  padding-bottom: 1em;
+  line-height: 1.4; }
+
 #masthead {
   height: 295px;
   margin-top: -20px;
@@ -443,7 +453,7 @@ a.dropdown-trigger {
   a.dropdown-trigger.active {
     position: relative;
     z-index: 200;
-    background-color: #fff;
+    background-color: white !important;
     -moz-border-radius-topleft: 3px;
     -webkit-border-top-left-radius: 3px;
     -ms-border-top-left-radius: 3px;
@@ -767,6 +777,10 @@ a.icon {
     background: transparent url(/images/icons/windows.png) 0 3px no-repeat; }
   a.icon.mac {
     background: transparent url(/images/icons/apple.png) 5px 3px no-repeat; }
+  a.icon.debian {
+    background: transparent url(/images/icons/debian.png) 6px 4px no-repeat; }
+  a.icon.solaris {
+    background: transparent url(/images/icons/solaris.png) 0 7px no-repeat; }
   a.icon.source {
     background: transparent url(/images/icons/source-code.png) 0 4px no-repeat; }
 
@@ -1232,4 +1246,8 @@ ul.books-list li {
       display: block; }
 
 table.binaries td {
-  padding-right: 12px; }
+  padding: 8px 20px 6px 0;
+  position: relative; }
+table.binaries a {
+  font-weight: bold;
+  border: solid 1px transparent; }

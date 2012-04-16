@@ -94,7 +94,6 @@
               <li>
                 <a class="active" href="/downloads">Downloads</a>
                 <ul class='expanded'>
-                  <li><a class="" href="/downloads/installers">Git Installers</a></li>
                   <li><a class="" href="/downloads/guis">GUI Clients</a></li>
                   <li><a class="" href="/downloads/logos">Logos</a></li>
                 </ul>
@@ -112,24 +111,61 @@
         <div id='content'>
           <div id='main'>
             <h1>Downloads</h1>
-            <h2>Git Installers</h2>
+            <div class='two-column'>
+              <div class='column-left'>
+                <div class='callout'>
+                  <table class='binaries'>
+                    <tr>
+                      <td><a class="icon mac" href="#">Mac OS X</a></td>
+                      <td><a class="icon windows" href="#">Windows</a></td>
+                    </tr>
+                    <tr>
+                      <td><a class="icon debian" href="#">Debian</a></td>
+                      <td><a class="icon solaris" href="#">Solaris v9-10</a></td>
+                    </tr>
+                  </table>
+                </div>
+                <p>
+                  <a href="http://code.google.com/p/git-core/downloads/list">Older releases</a> are available and the <a href="https://github.com/gitster/git">Git source repository</a> is on GitHub.
+                </p>
+              </div>
+              <div class='column-right'>
+                <div class='monitor mac'>
+                  <h4>Latest stable release</h4>
+                  <span class='version'>1.7.9.5</span>
+                  <a href="#">Release Notes</a>
+                  <span class='release-date'>(2012-26-03)</span>
+                  <a class="button" href="#">Download for Mac</a>
+                </div>
+              </div>
+            </div>
+            <div class='callout' id='more-downloads'>
+              <div class='two-column'>
+                <div class='column-left'>
+                  <h2>GUI Clients</h2>
+                  <p>
+                    Git comes with a built-in GUI (<strong>git-gui</strong>, <strong>gitk</strong>), but there are several third-party tools for users looking for platform-specific experience.
+                  </p>
+                  <p>
+                    <strong><a href="/downloads/guis">View GUI Clients →</a></strong>
+                  </p>
+                </div>
+                <div class='column-right'>
+                  <h2>Logos</h2>
+                  <p>Various Git logos in PNG (bitmap) and EPS (vector) formats are available for use in online and print projects.</p>
+                  <p>
+                    <strong><a href="/downloads/guis">View Logos →</a></strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <h2>Git via Git</h2>
             <p>
-              Git is easy to install with a pre-built binary or by compiling the source yourself. Installers are available for Windows, Mac, Linux, and Solaris.
+              If you already have Git installed, you can get the latest development version via Git itself:
             </p>
+            <code>git clone https://github.com/git/git.git</code>
             <p>
-              <strong><a href="/downloads/installers">View Git Installers →</a></strong>
-            </p>
-            <h2>GUI Clients</h2>
-            <p>
-              Git comes with a built-in GUI (<strong>git-gui</strong>, <strong>gitk</strong>), but there are several third-party tools for users looking for platform-specific experience.
-            </p>
-            <p>
-              <strong><a href="/downloads/guis">View GUI Clients →</a></strong>
-            </p>
-            <h2>Logos</h2>
-            <p>Various Git logos in PNG (bitmap) and EPS (vector) formats are available for use in online and print projects.</p>
-            <p>
-              <strong><a href="/downloads/guis">View Logos →</a></strong>
+              You can also always browse the current contents of the git repository using the <a href="#">web interface</a>.
             </p>
           </div>
         </div>
