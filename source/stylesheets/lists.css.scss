@@ -68,6 +68,15 @@ ol.full-search-results {
     padding-bottom: 0;
     margin-bottom: 0;
   }
+  span.relevancy {
+    float: right;
+    padding-left: 5px;
+    margin-left: 30px;
+    img {
+      position: relative;
+      top: -2px;
+    }
+  }
   a.url {
     display: block;
     font-size: 12px;

@@ -327,6 +327,10 @@ a#gui-os-filter {
 div.more {
   display: none; }
 
+.highlight {
+  background-color: #eee0b5;
+  padding: 2px; }
+
 body {
   font-size: 14px;
   line-height: 22px;
@@ -1267,6 +1271,13 @@ ol.full-search-results h3 {
   line-height: 1.4;
   padding-bottom: 0;
   margin-bottom: 0; }
+ol.full-search-results span.relevancy {
+  float: right;
+  padding-left: 5px;
+  margin-left: 30px; }
+  ol.full-search-results span.relevancy img {
+    position: relative;
+    top: -2px; }
 ol.full-search-results a.url {
   display: block;
   font-size: 12px;
