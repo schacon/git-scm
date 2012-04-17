@@ -145,7 +145,7 @@ li {
   line-height: 22px; }
 
 ul.unstyled, #front-nav ul, #companies-projects ul, ul#reference-version, #search-results table ul, ul.content-list, ul.video-thumbnails,
-ul.gui-thumbnails, ul.books-list, ul.stackoverflow,
+ul.gui-thumbnails, ul.books-list, ul.related-material, ul.stackoverflow,
 ol.unstyled,
 ol#reference-version,
 ol.reference-previous-versions,
@@ -1273,6 +1273,13 @@ ol.full-search-results a.url {
   margin-bottom: 0.4em; }
   ol.full-search-results a.url:hover {
     color: #5a5955; }
+
+ul.related-material {
+  font-size: 12px;
+  margin-bottom: 2em; }
+  ul.related-material li {
+    margin-bottom: 1em;
+    line-height: 1.4; }
 
 ul.stackoverflow {
   font-size: 12px; }

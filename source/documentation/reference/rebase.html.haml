@@ -2,9 +2,48 @@
 - @subsection = "reference"
 
 - content_for :sidebar do
-  %div.callout
-    %p
-      The entire <strong><a href="#">Pro Git book</a></strong> written by Scott Chacon is available to <a href="#">read online for free</a>. Dead tree versions are available on <a href="#">Amazon.com</a>.
+  %h4 Related Material
+
+  %ul.related-material
+    %li
+      <strong><a href="#">git-merge</a></strong> in <a href="#">Reference</a>
+    %li
+      <strong><a href="#">Rebasing</a></strong> in <a href="#">Book</a>
+    %li
+      <strong><a href="#">Rebase vs. Merge</a></strong> in <a href="#">Some Future Screencast</a>
+
+
+  %h4 Related StackOverflow Questions
+
+  %ul.stackoverflow
+    %li
+      =link_to "About Git's merge and rebase"
+      %span
+        <strong>5</strong> votes <em>/</em> <strong>3</strong> Answers
+    %li
+      =link_to "git rebase vs git merge"
+      %span
+        <strong>81</strong> votes <em>/</em> <strong>5</strong> Answers
+    %li
+      =link_to "How to do a rebase with git gui?"
+      %span
+        <strong>5</strong> votes <em>/</em> <strong>3</strong> Answers
+    %li
+      =link_to "recovering from git rebase"
+      %span
+        <strong>27</strong> votes <em>/</em> <strong>15</strong> Answers
+    %li
+      =link_to "git pull VS git fetch git rebase"
+      %span
+        <strong>15</strong> votes <em>/</em> <strong>3</strong> Answers
+    %li
+      =link_to "Undoing a git rebase"
+      %span
+        <strong>160</strong> votes <em>/</em> <strong>7</strong> Answers
+    %li
+      =link_to "How to know if there is a git rebase in progress?"
+      %span
+        <strong>16</strong> votes <em>/</em> <strong>7</strong> Answers
 
 %div#reference-version
   =link_to "Topics ▾", "#", {:class => 'dropdown-trigger', :id => 'reference-topics-trigger', 'data-panel-id' => 'topics-dropdown'}

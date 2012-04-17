@@ -79,6 +79,16 @@ ol.full-search-results {
   }
 }
 
+ul.related-material {
+  @extend .unstyled;
+  font-size: 12px;
+  margin-bottom: 2em;
+  li {
+    margin-bottom: 1em;
+    line-height: 1.4;
+  }
+}
+
 ul.stackoverflow {
   @extend .unstyled;
   font-size: 12px;
