@@ -1046,10 +1046,13 @@ form#search {
     -o-border-radius: 20px;
     border-radius: 20px;
     border: none;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    line-height: 1em;
     width: 100%;
+    height: 20px;
     background-color: transparent;
-    color: #4e443c;
-    padding: 6px 0 2px 0; }
+    color: #4e443c; }
   form#search.focus {
     border-color: #007175;
     background-color: #fff; }
