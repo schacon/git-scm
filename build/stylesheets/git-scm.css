@@ -1291,7 +1291,15 @@ ul.related-material {
   margin-bottom: 3em; }
   ul.related-material li {
     margin-bottom: 1em;
-    line-height: 1.4; }
+    line-height: 1.5;
+    padding-left: 25px;
+    min-height: 17px; }
+    ul.related-material li.reference {
+      background: transparent url(/images/icons/document-sm.png) 3px 0 no-repeat; }
+    ul.related-material li.book {
+      background: transparent url(/images/icons/book-sm.png) 0 0 no-repeat; }
+    ul.related-material li.video {
+      background: transparent url(/images/icons/film-sm.png) 2px 0 no-repeat; }
 
 ul.stackoverflow {
   font-size: 12px; }
