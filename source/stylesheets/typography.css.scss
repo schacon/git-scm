@@ -70,6 +70,11 @@ h4 {
     font-size: 12px;
   }
 }
+aside h4 {
+  color: $light-font-color;
+  line-height: 1.4;
+  margin-bottom: 1em;
+}
 h5 {
   font-size: 12px;
 }

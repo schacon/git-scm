@@ -112,6 +112,11 @@ h4 {
   h4 small {
     font-size: 12px; }
 
+aside h4 {
+  color: #9a9994;
+  line-height: 1.4;
+  margin-bottom: 1em; }
+
 h5 {
   font-size: 12px; }
 
@@ -140,11 +145,12 @@ li {
   line-height: 22px; }
 
 ul.unstyled, #front-nav ul, #companies-projects ul, ul#reference-version, #search-results table ul, ul.content-list, ul.video-thumbnails,
-ul.gui-thumbnails, ul.books-list,
+ul.gui-thumbnails, ul.books-list, ul.stackoverflow,
 ol.unstyled,
 ol#reference-version,
 ol.reference-previous-versions,
-ol.content-list {
+ol.content-list,
+ol.full-search-results {
   margin-left: 0;
   list-style: none; }
 
@@ -378,8 +384,9 @@ aside {
     #main .callout p {
       margin-bottom: 0; }
 
-.callout#more-downloads h2 {
+.callout h2:first-child {
   margin-top: 0; }
+
 .callout#more-downloads .column-left {
   width: 47%; }
 .callout#more-downloads .column-right {
@@ -1155,6 +1162,9 @@ form#search {
     #search-results table tr.show-all td {
       border-top: none; }
 
+.callout.top-matches {
+  padding-top: 1em !important; }
+
 .man-page p em {
   color: #4e443c;
   font-family: Courier, monospace;
@@ -1247,6 +1257,38 @@ ul.books-list li {
       border: none;
       margin-top: 2em;
       display: block; }
+
+ol.full-search-results li {
+  margin-bottom: 2em; }
+  ol.full-search-results li:last-child {
+    margin-bottom: 0; }
+ol.full-search-results h3 {
+  line-height: 1.4;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+ol.full-search-results a.url {
+  display: block;
+  font-size: 12px;
+  color: #9a9994;
+  margin-bottom: 0.4em; }
+  ol.full-search-results a.url:hover {
+    color: #5a5955; }
+
+ul.stackoverflow {
+  font-size: 12px; }
+  ul.stackoverflow li {
+    margin-bottom: 1em; }
+  ul.stackoverflow a {
+    display: block;
+    line-height: 1.2;
+    font-weight: bold; }
+  ul.stackoverflow span {
+    display: block;
+    color: #9a9994; }
+    ul.stackoverflow span strong {
+      color: #81807a; }
+    ul.stackoverflow span em {
+      color: #cccbc8; }
 
 table.binaries td {
   padding: 8px 20px 6px 0;

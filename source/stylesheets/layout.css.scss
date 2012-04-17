@@ -57,10 +57,11 @@ aside {
   }
 }
 
-.callout#more-downloads {
-  h2 {
+.callout h2:first-child {
     margin-top: 0;
-  }
+}
+
+.callout#more-downloads {
   .column-left {
     width: 47%;
   }

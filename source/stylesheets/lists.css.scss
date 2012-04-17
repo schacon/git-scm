@@ -55,6 +55,53 @@ ul.books-list {
   }
 }
 
+ol.full-search-results {
+  @extend .unstyled;
+  li {
+    margin-bottom: 2em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  h3 {
+    line-height: 1.4;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  a.url {
+    display: block;
+    font-size: 12px;
+    color: $light-font-color;
+    margin-bottom: 0.4em;
+    &:hover {
+      color: darken($light-font-color, 25%);
+    }
+  }
+}
+
+ul.stackoverflow {
+  @extend .unstyled;
+  font-size: 12px;
+  li {
+    margin-bottom: 1em;
+  }
+  a {
+    display: block;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+  span {
+    display: block;
+    color: $light-font-color;
+    strong {
+      color: darken($light-font-color, 10%);
+    }
+    em {
+      color: lighten($light-font-color, 20%);
+    }
+  }
+}
+
 table.binaries {
   td {
     padding: 8px 20px 6px 0;
