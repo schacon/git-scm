@@ -1163,7 +1163,8 @@ form#search {
       border-top: none; }
 
 .callout.top-matches {
-  padding-top: 1em !important; }
+  padding-top: 1em !important;
+  margin-bottom: 2em !important; }
 
 .man-page p em {
   color: #4e443c;
@@ -1276,7 +1277,7 @@ ol.full-search-results a.url {
 
 ul.related-material {
   font-size: 12px;
-  margin-bottom: 2em; }
+  margin-bottom: 3em; }
   ul.related-material li {
     margin-bottom: 1em;
     line-height: 1.4; }
