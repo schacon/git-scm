@@ -155,19 +155,17 @@ var Downloads = {
 
 var AboutContent = {
   init: function() {
-    AboutContent.observeReadMoreLinks();
+    AboutContent.observeNav();
   },
 
-  observeReadMoreLinks: function() {
-    $('a.read-more').live('click', function(e) {
+  observeNav: function() {
+    $('ol#about-nav a, .bottom-nav a').click(function(e) {
       e.preventDefault();
-      $(this).closest('p').next('.more').slideDown('fast');
-      $(this).html('← Read Less').removeClass('read-more').addClass('read-less');
-    });
-    $('a.read-less').live('click', function(e) {
-      e.preventDefault();
-      $(this).closest('p').next('.more').slideUp('fast');
-      $(this).html('Read More →').removeClass('read-less').addClass('read-more');
+      var sectionId = $(this).attr('data-section-id');
+      $('ol#about-nav a').removeClass('current');
+      $('ol#about-nav a#nav-' + sectionId).addClass('current');
+      $('section').hide();
+      $('section#' + sectionId).show();
     });
   }
 }

@@ -150,6 +150,26 @@ aside nav ul {
   }
 }
 
+.bottom-nav {
+  @extend .callout;
+  @include clearfix;
+  margin-top: 2em;
+  font-weight: bold;
+  .previous {
+    float: left;
+  }
+  .next {
+    float: right;
+  }
+}
+
+section.about {
+  display: none;
+  &.current {
+    display: block;
+  }
+}
+
 // Dropdowns
 a.dropdown-trigger {
   padding: 4px 5px;

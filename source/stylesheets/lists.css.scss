@@ -55,6 +55,51 @@ ul.books-list {
   }
 }
 
+ol#about-nav {
+  @extend .unstyled;
+  @include clearfix;
+  li {
+    display: inline;
+    float: left;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      width: 70px;
+      height: 100px;
+      display: block;
+      opacity: 0.9;
+      text-align: center;
+      padding: 0 15px;
+      font-size: 14px;
+      line-height: 17px;
+      color: $font-color;
+      background: transparent url(/images/icons/nav-circles.png) 0 0 no-repeat;
+      &.current {
+        background: transparent url(/images/icons/nav-circles.png) 0 -100px no-repeat;
+        color: #fff;
+        opacity: 1;
+      }
+      &.one-line {
+        padding-top: 42px;
+        height: 58px;
+      }
+      &.two-line {
+        padding-top: 34px;
+        height: 66px;
+      }
+      &.three-line {
+        padding-top: 25px;
+        height: 75px;
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
 ol.full-search-results {
   @extend .unstyled;
   li {
