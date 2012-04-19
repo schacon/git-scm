@@ -162,8 +162,10 @@ var AboutContent = {
   defaultSection: "branching-and-merging",
 
   init: function() {
+    if ($('body#about').length === 0) return;
     AboutContent.observeNav();
     AboutContent.observePopState();
+    AboutContent.showSection(AboutContent.getSection());
   },
 
   observePopState: function() {
