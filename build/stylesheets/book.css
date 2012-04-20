@@ -1,34 +1,31 @@
 /*
-Syntax error: Undefined variable: "$font-color".
-        on line 11 of /Users/jason/Dropbox/projects/git-scm/www/source/stylesheets/book.css.scss
+Syntax error: Undefined variable: "$base-border-color".
+        on line 5 of /Users/jason/Dropbox/projects/git-scm/www/source/stylesheets/book.css.scss
 
-6:   }
-7:   ol {
-8:     list-style: none; 
-9:   }
-10:   h2 {
-11:     color: $font-color;
-12:   }
-13:   a {
-14:     padding-left: 4px;
-15:   }
-16: }
+1: #book-container {
+2:   position: relative;
+3:   @extend .callout;
+4:   background-color: transparent ! important;
+5:   border: solid 1px lighten($base-border-color, 10%);
+6:   padding-top: 20px ! important;
+7:   padding-bottom: 20px ! important;
+8: }
+9: #book-intro {
+10:   position: absolute;
 
 Backtrace:
-/Users/jason/Dropbox/projects/git-scm/www/source/stylesheets/book.css.scss:11
+/Users/jason/Dropbox/projects/git-scm/www/source/stylesheets/book.css.scss:5
 /Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/script/variable.rb:49:in `_perform'
 /Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/script/node.rb:40:in `perform'
+/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/script/funcall.rb:76:in `block in _perform'
+/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/script/funcall.rb:76:in `map'
+/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/script/funcall.rb:76:in `_perform'
+/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/script/node.rb:40:in `perform'
+/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/script/list.rb:69:in `block in _perform'
+/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/script/list.rb:69:in `map'
+/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/script/list.rb:69:in `_perform'
+/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/script/node.rb:40:in `perform'
 /Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:216:in `visit_prop'
-/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:238:in `visit_rule'
 /Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:18:in `visit'
 /Users/jason/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.15/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -119,4 +116,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$font-color\".\A         on line 11 of /Users/jason/Dropbox/projects/git-scm/www/source/stylesheets/book.css.scss\A \A 6:   }\A 7:   ol {\A 8:     list-style: none; \A 9:   }\A 10:   h2 {\A 11:     color: $font-color;\A 12:   }\A 13:   a {\A 14:     padding-left: 4px;\A 15:   }\A 16: }"; }
+  content: "Syntax error: Undefined variable: \"$base-border-color\".\A         on line 5 of /Users/jason/Dropbox/projects/git-scm/www/source/stylesheets/book.css.scss\A \A 1: #book-container {\A 2:   position: relative;\A 3:   @extend .callout;\A 4:   background-color: transparent ! important;\A 5:   border: solid 1px lighten($base-border-color, 10%);\A 6:   padding-top: 20px ! important;\A 7:   padding-bottom: 20px ! important;\A 8: }\A 9: #book-intro {\A 10:   position: absolute;"; }

@@ -10,6 +10,7 @@ $(document).ready(function() {
   Forms.init();
   Downloads.init();
   AboutContent.init();
+  FlippyBook.init();
 });
 
 var BrowserFallbacks = {
@@ -210,5 +211,22 @@ var AboutContent = {
       }
       AboutContent.showSection(section);
     });
+  }
+}
+
+var FlippyBook = {
+  init: function() {
+    FlippyBook.observeOpenCloseClicks();
+  },
+
+  observeOpenCloseClicks: function() {
+    $('#book-cover-outside').click(function(e) {
+      e.preventDefault();
+      $('#book-cover').addClass('open');                    
+    }); 
+    $('#flippy-book-close').click(function(e) {
+      e.preventDefault();
+      $('#book-cover').removeClass('open').addClass('close');                    
+    }); 
   }
 }
