@@ -220,13 +220,15 @@ var FlippyBook = {
   },
 
   observeOpenCloseClicks: function() {
-    $('#book-cover-outside').click(function(e) {
+    $('#book-cover-outside, #open-book').click(function(e) {
       e.preventDefault();
-      $('#book-cover').addClass('open');                    
+      $('#book-intro').css('z-index', '');
+      $('#book-cover').addClass('open');
     }); 
-    $('#flippy-book-close').click(function(e) {
+    $('#about-book').click(function(e) {
       e.preventDefault();
       $('#book-cover').removeClass('open').addClass('close');                    
+      var t = setTimeout ("$('#book-intro').css('z-index', 100)", 1000);
     }); 
   }
 }
